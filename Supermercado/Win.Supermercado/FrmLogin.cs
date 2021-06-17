@@ -39,10 +39,22 @@ namespace Win.Supermercado
             {
                 this.Close();
             }
+            else{
+                if (Usuario == "hola" && Contraseña == "5678")
+                {
+                    this.Close();
+                }
             else
+
             {
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }
+         }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
