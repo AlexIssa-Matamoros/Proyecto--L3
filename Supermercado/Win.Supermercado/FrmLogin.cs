@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BL.Supermercado;
+using System;
 using System.Windows.Forms;
 
 namespace Win.Supermercado
 {
     public partial class FrmLogin : Form
     {
+        SeguridadBL _seguridad;
+
         public FrmLogin()
         {
             InitializeComponent();
+
+            _seguridad = new SeguridadBL();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -35,26 +33,29 @@ namespace Win.Supermercado
             Usuario = txtUsuario.Text;
             Contraseña = txtContra.Text;
 
-            if (Usuario == "admi" && Contraseña == "1234")
+            var resultado = _seguridad.Autorizar(Usuario, Contraseña);
+
+            if (resultado == true)
             {
                 this.Close();
             }
-            else{
-                if (Usuario == "hola" && Contraseña == "5678")
-                {
-                    this.Close();
-                }
+
             else
 
             {
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }
-         }
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

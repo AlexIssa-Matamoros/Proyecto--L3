@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Supermercado;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,24 @@ namespace Win.Supermercado
 {
     public partial class FrmProductos : Form
     {
+        ProductosBL _productos;
+
         public FrmProductos()
         {
             InitializeComponent();
+
+            _productos = new ProductosBL();
+            listaProductosBindingSource.DataSource = _productos.ObtenerProductos();
+        }
+
+        private void FrmProductos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void activoCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

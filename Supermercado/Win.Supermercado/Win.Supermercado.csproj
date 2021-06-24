@@ -92,7 +92,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\BL.Supermercado.Producto.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.ProductosBL.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\Win.Supermercado.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Win.Supermercado.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +111,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cybersecurity-lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cybersecurity-lock1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.Supermercado\BL.Supermercado.csproj">
+      <Project>{97855942-a58b-4f19-a039-a6821d51822a}</Project>
+      <Name>BL.Supermercado</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
