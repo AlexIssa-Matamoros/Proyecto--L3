@@ -67,19 +67,61 @@ namespace BL.Supermercado
             return ListaProductos;
         }
 
-        public bool GuardarProducto(Producto producto)
+        public Resultado GuardarProducto(Producto producto)
         {
+            var resultado = Validar(producto);
+            if (resultado.Exitoso == false)
+            {
+                return resultado;
+            }
             if (producto.Id == 0)
             {
                 producto.Id = ListaProductos.Max(item => item.Id) + 1;
             }
-            return true;
+            resultado.Exitoso = true;
+            return resultado;
         }
 
         public void AgregarProducto()
         {
             var nuevoProducto = new Producto();
             ListaProductos.Add(nuevoProducto);
+        }
+
+        public bool EliminarProducto(int id)
+        {
+            foreach (var producto in ListaProductos)
+            {
+                if (producto.Id == id)
+                {
+                    ListaProductos.Remove(producto);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private Resultado Validar(Producto producto)
+        {
+            var resultado = new Resultado();
+            resultado.Exitoso = true;
+
+            if (string.IsNullOrEmpty(producto.Descripcion)== true)
+            {
+                resultado.Mensaje = "Ingrese una descripcion";
+                resultado.Exitoso = false;
+            }
+            if (producto.Existencia < 0)
+            {
+                resultado.Mensaje = "La existencia deber ser mayor que 0";
+                resultado.Exitoso = false;
+            }
+            if (producto.Precio < 0)
+            {
+                resultado.Mensaje = "El precio deber ser mayor que 0";
+                resultado.Exitoso = false;
+            }
+            return resultado;
         }
     }
 
@@ -90,5 +132,11 @@ namespace BL.Supermercado
         public double Precio { get; set; }
         public int Existencia { get; set; }
         public bool Activo { get; set; }
+    }
+
+    public class Resultado
+    {
+        public bool Exitoso { get; set; }
+        public string Mensaje { get; set; }
     }
 }
