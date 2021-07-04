@@ -32,5 +32,28 @@ namespace Win.Supermercado
         {
 
         }
+
+        private void listaProductosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            listaProductosBindingSource.EndEdit();
+            var producto = (Producto)listaProductosBindingSource.Current;
+
+            var resultado = _productos.GuardarProducto(producto);
+
+            if (resultado == true)
+            {
+                listaProductosBindingSource.ResetBindings(false);
+            }
+            else
+            {
+                MessageBox.Show("OCURRIO UN ERROR AL MOMENTO DE GUARDAR");
+            }
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+            _productos.AgregarProducto();
+            listaProductosBindingSource.MoveLast();
+        }
     }
 }

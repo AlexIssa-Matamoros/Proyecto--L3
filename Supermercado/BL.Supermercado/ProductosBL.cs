@@ -66,6 +66,21 @@ namespace BL.Supermercado
         {
             return ListaProductos;
         }
+
+        public bool GuardarProducto(Producto producto)
+        {
+            if (producto.Id == 0)
+            {
+                producto.Id = ListaProductos.Max(item => item.Id) + 1;
+            }
+            return true;
+        }
+
+        public void AgregarProducto()
+        {
+            var nuevoProducto = new Producto();
+            ListaProductos.Add(nuevoProducto);
+        }
     }
 
     public class Producto
