@@ -49,7 +49,7 @@ namespace Win.Supermercado
             else
             {
                 MessageBox.Show(resultado.Mensaje);
-            }
+            } 
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
