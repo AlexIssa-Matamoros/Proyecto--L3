@@ -91,6 +91,7 @@ namespace BL.Supermercado
         public string Descripcion { get; set; }
         public double Precio { get; set; }
         public int Existencia { get; set; }
+        public byte[] Foto { get; set; }
         public bool Activo { get; set; }
     }
 
