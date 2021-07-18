@@ -41,6 +41,19 @@ namespace BL.Supermercado
             cat5.Descripcion = "Granos basicos";
             context.Categorias.Add(cat5);
 
+            var T1 = new Tipo();
+            T1.Descripcion = "Bienes de Consumo";
+            context.Tipos.Add(T1);
+
+            var T2 = new Tipo();
+            T2.Descripcion = "Bienes no duraderos";
+            context.Tipos.Add(T2);
+
+            var T3 = new Tipo();
+            T3.Descripcion = "Bienes de uso comun";
+            context.Tipos.Add(T3);
+
+
             base.Seed(context);
         }
     }

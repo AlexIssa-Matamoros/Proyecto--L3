@@ -29,7 +29,7 @@ namespace Win.Supermercado
             contrasena = txtContra.Text;
 
             button1.Enabled = false;
-            button1.Text = "Verificando...";
+            button1.Text = "VERIFICANDO...";
             Application.DoEvents();
 
             var resultado = _seguridad.Autorizar(usuario, contrasena);
@@ -44,7 +44,7 @@ namespace Win.Supermercado
             }
 
             button1.Enabled = true;
-            button1.Text = "Aceptar";
+            button1.Text = "ACEPTAR";
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
@@ -55,6 +55,16 @@ namespace Win.Supermercado
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContra_Enter(object sender, EventArgs e)
+        {
+            txtContra.UseSystemPasswordChar = true;
         }
     }
 }
