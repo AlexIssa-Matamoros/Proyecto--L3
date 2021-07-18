@@ -1,32 +1,34 @@
 ﻿using BL.Supermercado;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Win.Supermercado
 {
-    public partial class FrmLogin : Form
+    public partial class FmLogin : Form
     {
         SeguridadBL _seguridad;
 
-        public FrmLogin()
+        public FmLogin()
         {
             InitializeComponent();
 
             _seguridad = new SeguridadBL();
-
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             string usuario;
             string contrasena;
 
-            usuario = txtUsuario.Text;
-            contrasena = txtContra.Text;
+            usuario = textBox1.Text;
+            contrasena = textBox2.Text;
 
             button1.Enabled = false;
             button1.Text = "Verificando...";
@@ -47,15 +49,14 @@ namespace Win.Supermercado
             button1.Text = "Aceptar";
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        private void FmLogin_Load(object sender, EventArgs e)
         {
 
         }
     }
 }
-

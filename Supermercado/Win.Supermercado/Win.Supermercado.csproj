@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmLogin.Designer.cs">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FmLogin.resx">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,9 +116,11 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\BL.Supermercado.CategoriasBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.Producto.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.TiposBL.datasource" />
     <None Include="Properties\DataSources\Win.Supermercado.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\Win.Supermercado.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
