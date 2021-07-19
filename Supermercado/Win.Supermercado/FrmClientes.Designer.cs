@@ -299,6 +299,7 @@
             // 
             // nombreTextBox
             // 
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaClientesBindingSource, "Nombre", true));
             this.nombreTextBox.Location = new System.Drawing.Point(187, 86);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(229, 20);
