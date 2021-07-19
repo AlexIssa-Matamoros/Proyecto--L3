@@ -94,5 +94,11 @@ namespace Win.Supermercado
                 MessageBox.Show(resultado.Mensaje);
             }
         }
+
+        private void toolStripButtonCancelar_Click(object sender, EventArgs e)
+        {
+            _clientesBL.CancelarCambios();
+            DeshabilitarHabilitarBotones(true);
+        }
     }
 }

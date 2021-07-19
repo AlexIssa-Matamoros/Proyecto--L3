@@ -53,7 +53,9 @@ namespace BL.Supermercado
             T3.Descripcion = "Bienes de uso comun";
             context.Tipos.Add(T3);
 
-         
+            //var Cliente1 = new Cliente();
+            //Cliente1.Nombre = "Alex";
+            //context.Clientes.Add(Cliente1);
 
             base.Seed(context);
         }
