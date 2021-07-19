@@ -53,6 +53,7 @@ namespace BL.Supermercado
             T3.Descripcion = "Bienes de uso comun";
             context.Tipos.Add(T3);
 
+         
 
             base.Seed(context);
         }

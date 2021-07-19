@@ -42,9 +42,9 @@ namespace Win.Supermercado
 
         private void cleintesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var FrmProveedores = new FrmProveedores();
-            FrmProveedores.MdiParent = this;
-            FrmProveedores.Show();
+            var FrmClientes = new FrmClientes();
+            FrmClientes.MdiParent = this;
+            FrmClientes.Show();
         }
     }
 }

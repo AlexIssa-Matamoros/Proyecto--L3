@@ -35,8 +35,8 @@
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label precioLabel;
             System.Windows.Forms.Label categoriaIdLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             System.Windows.Forms.Label descripcionLabel1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProductos));
             this.listaProductosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.listaProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -133,6 +133,15 @@
             categoriaIdLabel.Size = new System.Drawing.Size(52, 13);
             categoriaIdLabel.TabIndex = 14;
             categoriaIdLabel.Text = "Categoria";
+            // 
+            // descripcionLabel1
+            // 
+            descripcionLabel1.AutoSize = true;
+            descripcionLabel1.Location = new System.Drawing.Point(57, 98);
+            descripcionLabel1.Name = "descripcionLabel1";
+            descripcionLabel1.Size = new System.Drawing.Size(28, 13);
+            descripcionLabel1.TabIndex = 16;
+            descripcionLabel1.Text = "Tipo";
             // 
             // listaProductosBindingNavigator
             // 
@@ -375,15 +384,6 @@
             // 
             this.listaTiposBindingSource.DataSource = typeof(BL.Supermercado.Tipo);
             // 
-            // descripcionLabel1
-            // 
-            descripcionLabel1.AutoSize = true;
-            descripcionLabel1.Location = new System.Drawing.Point(57, 98);
-            descripcionLabel1.Name = "descripcionLabel1";
-            descripcionLabel1.Size = new System.Drawing.Size(28, 13);
-            descripcionLabel1.TabIndex = 16;
-            descripcionLabel1.Text = "Tipo";
-            // 
             // descripcionComboBox
             // 
             this.descripcionComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaProductosBindingSource, "TipoId", true));
@@ -421,6 +421,7 @@
             this.Controls.Add(this.precioTextBox);
             this.Controls.Add(this.listaProductosBindingNavigator);
             this.Name = "FrmProductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.FrmProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaProductosBindingNavigator)).EndInit();

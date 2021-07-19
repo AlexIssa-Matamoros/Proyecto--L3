@@ -124,8 +124,8 @@ namespace Win.Supermercado
 
         private void toolStripButtonCancelar_Click(object sender, EventArgs e)
         {
+            _productos.CancelarCambios();
             DesabilitarHabilitarBotones(true);
-            Eliminar(0);
         }
 
         private void button1_Click(object sender, EventArgs e)

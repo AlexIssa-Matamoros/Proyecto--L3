@@ -74,7 +74,7 @@
             // 
             this.cleintesToolStripMenuItem.Name = "cleintesToolStripMenuItem";
             this.cleintesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cleintesToolStripMenuItem.Text = "Proveedores";
+            this.cleintesToolStripMenuItem.Text = "Clientes";
             this.cleintesToolStripMenuItem.Click += new System.EventHandler(this.cleintesToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
@@ -116,7 +116,7 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 

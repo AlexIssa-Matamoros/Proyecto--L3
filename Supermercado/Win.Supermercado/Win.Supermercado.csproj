@@ -64,6 +64,12 @@
     <Compile Include="FmLogin.Designer.cs">
       <DependentUpon>FmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,16 +88,13 @@
     <Compile Include="FrmProductos.Designer.cs">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProveedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmProveedores.Designer.cs">
-      <DependentUpon>FrmProveedores.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FmLogin.resx">
       <DependentUpon>FmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -101,9 +104,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmProveedores.resx">
-      <DependentUpon>FrmProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +117,7 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BL.Supermercado.CategoriasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.ClientesBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.Producto.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.SeguridadBL.datasource" />

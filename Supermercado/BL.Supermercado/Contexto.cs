@@ -20,10 +20,11 @@ namespace BL.Supermercado
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             Database.SetInitializer(new DatosdeInicio());
         }
-
+        public DbSet<Cliente> Clientes { get; internal set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        
     }
 }

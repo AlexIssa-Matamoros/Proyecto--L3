@@ -27,6 +27,15 @@ namespace BL.Supermercado
             return ListaProductos;
         }
 
+        public void CancelarCambios()
+        {
+            foreach (var item in _contexto.ChangeTracker.Entries())
+            {
+                item.State = EntityState.Unchanged;
+                item.Reload();
+            }
+        }
+
         public Resultado GuardarProducto(Producto producto)
         {
             var resultado = Validar(producto);
