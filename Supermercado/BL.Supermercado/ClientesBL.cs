@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Linq;
 
+
 namespace BL.Supermercado
 {
     public class ClientesBL
@@ -89,6 +90,7 @@ namespace BL.Supermercado
             return resultado;
         }
     }
+
     public class Cliente
     {
         public int Id { get; set; }

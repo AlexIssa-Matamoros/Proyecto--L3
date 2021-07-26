@@ -64,6 +64,12 @@
     <Compile Include="FmLogin.Designer.cs">
       <DependentUpon>FmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFactura.Designer.cs">
+      <DependentUpon>FormFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <EmbeddedResource Include="FmLogin.resx">
       <DependentUpon>FmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormFactura.resx">
+      <DependentUpon>FormFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,7 +126,9 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BL.Supermercado.CategoriasBL.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.Cliente.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.ClientesBL.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.FacturaBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.Producto.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.SeguridadBL.datasource" />
