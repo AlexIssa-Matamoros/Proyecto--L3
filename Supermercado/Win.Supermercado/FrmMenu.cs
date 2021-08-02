@@ -53,5 +53,26 @@ namespace Win.Supermercado
             formFactura.MdiParent = this;
             formFactura.Show();
         }
+
+        private void reporteDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //var menu = new FrrmMenu();
+            //menu.Show();
+
+        }
+
+        private void reporteProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteProductos = new FormReporteProductos();
+            formReporteProductos.MdiParent = this;
+            formReporteProductos.Show(); 
+        }
+
+        private void reporteFacturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteFacturas = new FormReporteFacturas();
+            formReporteFacturas.MdiParent = this;
+            formReporteFacturas.Show();
+        }
     }
 }
