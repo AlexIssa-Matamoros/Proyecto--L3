@@ -92,12 +92,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FmLogin.Designer.cs">
-      <DependentUpon>FmLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +134,12 @@
     <Compile Include="FrmProductos.Designer.cs">
       <DependentUpon>FrmProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,9 +163,6 @@
     <EmbeddedResource Include="aaa.resx">
       <DependentUpon>aaa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmLogin.resx">
-      <DependentUpon>FmLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormFactura.resx">
       <DependentUpon>FormFactura.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductos.resx">
       <DependentUpon>FrmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrrmMenu.resx">
       <DependentUpon>FrrmMenu.cs</DependentUpon>
@@ -229,6 +229,7 @@
     <None Include="Properties\DataSources\BL.Supermercado.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.SeguridadBL.datasource" />
     <None Include="Properties\DataSources\BL.Supermercado.TiposBL.datasource" />
+    <None Include="Properties\DataSources\BL.Supermercado.Usuario.datasource" />
     <None Include="Properties\DataSources\Win.Supermercado.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\Win.Supermercado.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Supermercado;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -8,8 +9,9 @@ using System.Windows.Forms;
 
 namespace Win.Supermercado
 {
-    static class Program
+    static class Program 
     {
+        public static Usuario UsuarioLogueado;
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

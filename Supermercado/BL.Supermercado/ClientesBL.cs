@@ -19,10 +19,22 @@ namespace BL.Supermercado
 
         public BindingList<Cliente> ObtenerClientes()
         {
-            _contexto.Clientes.Load();
-            ListaClientes = _contexto.Clientes.Local.ToBindingList();
+            //_contexto.Clientes.Load();
+            //ListaClientes = _contexto.Clientes.Local.ToBindingList();
+
+            ListaClientes = new BindingList<Cliente>(_contexto.Clientes.OrderBy(o => o.Nombre).ToList());
 
             return ListaClientes;
+        }
+
+        public BindingList<Cliente> ObtenerClientes(string buscar)
+        {
+            var query = _contexto.Clientes
+                    .Where(p => p.Nombre.ToLower()
+                        .Contains(buscar.ToLower()) == true).ToList();
+
+            var resultado = new BindingList<Cliente>(query);
+            return resultado;
         }
 
         public void CancelarCambios()
@@ -95,9 +107,9 @@ namespace BL.Supermercado
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string Telefono { get; set; }
-        public string Correo { get; set; }
-        public string Direccion { get; set; }
+        //public string Telefono { get; set; }
+        //public string Correo { get; set; }
+        //public string Direccion { get; set; }
         public bool Activo { get; set; }
 
         public Cliente()

@@ -27,6 +27,19 @@ namespace BL.Supermercado
             return ListaProductos;
         }
 
+        public BindingList<Producto> ObtenerProductos (string buscar)
+        {
+            var query = _contexto.Productos
+                    .Where(p => p.Descripcion.ToLower()
+                        .Contains(buscar.ToLower()) == true).ToList();
+
+            var resultado = new BindingList<Producto>(query);
+            return resultado;
+        }
+
+
+
+
         public void CancelarCambios()
         {
             foreach (var item in _contexto.ChangeTracker.Entries())

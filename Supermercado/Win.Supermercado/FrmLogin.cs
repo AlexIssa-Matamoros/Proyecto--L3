@@ -32,10 +32,13 @@ namespace Win.Supermercado
             button1.Text = "VERIFICANDO...";
             Application.DoEvents();
 
-            var resultado = _seguridad.Autorizar(usuario, contrasena);
+          
+            var usuarioDB = _seguridad.Autorizar(usuario, contrasena);
 
-            if (resultado == true)
+            if (usuarioDB != null)
             {
+                Program.UsuarioLogueado = usuarioDB;
+
                 this.Close();
             }
             else
@@ -65,6 +68,29 @@ namespace Win.Supermercado
         private void txtContra_Enter(object sender, EventArgs e)
         {
             txtContra.UseSystemPasswordChar = true;
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter) 
+                && !string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                txtContra.Focus();
+            }
+        }
+
+        private void txtContra_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtContra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter)
+               && !string.IsNullOrEmpty(txtContra.Text))
+            {
+                button1.PerformClick();
+            }
         }
     }
 }
