@@ -81,8 +81,8 @@ namespace Win.Supermercado
 
         private void reporteDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //var menu = new FrrmMenu();
-            //menu.Show();
+            var menu = new FrrmMenu();
+            menu.Show();
 
         }
 

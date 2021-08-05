@@ -14,10 +14,12 @@ namespace Win.Supermercado
     {
         private Button currentBtn;
         private Panel leftBorderBtn;
+        private Form currentChildForm;
 
         public FrrmMenu()
         {
             InitializeComponent();
+            PersonalizarDiseño();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             Botones.Controls.Add(leftBorderBtn);
@@ -73,26 +75,149 @@ namespace Win.Supermercado
         private void btnProducto_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, RGBColores.color1);
+            AbrirFormularioHijo(new FrmProductos());
+            PanelSubmenuReportes.Visible = false;
+            PanelSubMenuSeguridad.Visible = false;
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, RGBColores.color2);
+            AbrirFormularioHijo(new FrmClientes());
+            PanelSubmenuReportes.Visible = false;
+            PanelSubMenuSeguridad.Visible = false;
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, RGBColores.color3);
+            AbrirFormularioHijo(new FormFactura());
+            PanelSubmenuReportes.Visible = false;
+            PanelSubMenuSeguridad.Visible = false;
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
             ActivarBoton(sender, RGBColores.color4);
+            MostrarSubMenus(PanelSubmenuReportes);
+            PanelSubMenuSeguridad.Visible = false;
         }
+
+        private void btnSeguridad_Click(object sender, EventArgs e)
+        {
+            ActivarBoton(sender, RGBColores.color4);
+            MostrarSubMenus(PanelSubMenuSeguridad);
+            PanelSubmenuReportes.Visible = false;
+        }
+
         private void Reiniciar()
         {
             DesactivarBoton();
             iconodeFormHijo.Image = currentBtn.Image;
+        }
+
+        ////////////// Sub Menu /////////
+
+        private void PersonalizarDiseño()
+        {
+            PanelSubmenuReportes.Visible = false;
+            PanelSubMenuSeguridad.Visible = false;
+            //..
+        }
+
+        private void OcultarSubmenu()
+        {
+            if (PanelSubmenuReportes.Visible == true)
+                PanelSubmenuReportes.Visible = false;
+            if (PanelSubMenuSeguridad.Visible == true)
+                PanelSubMenuSeguridad.Visible = false;
+
+        }
+
+        private void MostrarSubMenus(Panel SubMenu)
+        {
+            if (SubMenu.Visible == false)
+            {
+                OcultarSubmenu();
+                SubMenu.Visible = true;
+            }
+            else
+            {
+                SubMenu.Visible = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            /// codigos de mostrar cada formulario
+            AbrirFormularioHijo(new FormReporteProductos());
+            OcultarSubmenu();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            /// codigos de mostrar cada formulario
+            AbrirFormularioHijo(new FormReporteFacturas());
+            OcultarSubmenu();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            /// codigos de mostrar cada formulario
+            AbrirFormularioHijo(new FrmUsuarios());
+            OcultarSubmenu();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            /// codigos de mostrar cada formulario
+            OcultarSubmenu();
+        }
+
+       
+
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        //Abrir Formulario dentro del menu
+        private void AbrirFormularioHijo(Form FrmHijo)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = FrmHijo;
+            FrmHijo.TopLevel = false;
+            FrmHijo.FormBorderStyle = FormBorderStyle.None;
+            FrmHijo.Dock = DockStyle.Fill;
+            PanelEscritorio.Controls.Add(FrmHijo);
+            PanelEscritorio.Tag = FrmHijo;
+            FrmHijo.BringToFront();
+            FrmHijo.Show();
+            TituloFrmHijo.Text = FrmHijo.Text;
+        }
+
+        private void horafecha_Tick(object sender, EventArgs e)
+        {
+            lblhora.Text = DateTime.Now.ToLongTimeString();
+            lblfecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void botonInicio_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Close();
+            Reset();
+        }
+
+        public void Reset()
+        {
+            DesactivarBoton();
+            leftBorderBtn.Visible = false;
+           
+            TituloFrmHijo.Text = "Inicio";
         }
     }
 }
