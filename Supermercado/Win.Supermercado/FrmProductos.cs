@@ -92,6 +92,7 @@ namespace Win.Supermercado
             bindingNavigatorAddNewItem.Enabled = valor;
             bindingNavigatorDeleteItem.Enabled = valor;
             toolStripButtonCancelar.Visible = !valor;
+            BtnCancelar.Visible = !valor;
         }
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
@@ -171,6 +172,124 @@ namespace Win.Supermercado
             }
 
             listaProductosBindingSource.ResetBindings(false);
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            _productos.AgregarProducto();
+            listaProductosBindingSource.MoveLast();
+
+            DesabilitarHabilitarBotones(false);
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (idTextBox.Text != "")
+            {
+                var resultado = MessageBox.Show("Desea eliminar este registro?", "Eliminar", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Eliminar(id);
+                }
+
+            }
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            listaProductosBindingSource.EndEdit();
+            var producto = (Producto)listaProductosBindingSource.Current;
+
+            if (fotoPictureBox.Image != null)
+            {
+                producto.Foto = Program.imageToByteArray(fotoPictureBox.Image);
+            }
+            else
+            {
+                producto.Foto = null;
+            }
+
+
+            var resultado = _productos.GuardarProducto(producto);
+
+            if (resultado.Exitoso == true)
+            {
+                listaProductosBindingSource.ResetBindings(false);
+                DesabilitarHabilitarBotones(true);
+                MessageBox.Show("Producto guardado");
+            }
+            else
+            {
+                MessageBox.Show(resultado.Mensaje);
+            }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            _productos.CancelarCambios();
+            DesabilitarHabilitarBotones(true);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var buscar = textBox1.Text;
+
+            if (string.IsNullOrEmpty(buscar) == true)
+            {
+                listaProductosBindingSource.DataSource = _productos.ObtenerProductos();
+            }
+            else
+            {
+                listaProductosBindingSource.DataSource = _productos.ObtenerProductos(buscar);
+            }
+
+            listaProductosBindingSource.ResetBindings(false);
+        }
+
+        private void existenciaLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void precioLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoriaIdLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void descripcionLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void descripcionLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaProductosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

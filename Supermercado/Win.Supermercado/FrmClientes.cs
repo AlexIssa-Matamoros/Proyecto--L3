@@ -116,5 +116,10 @@ namespace Win.Supermercado
 
             listaClientesBindingSource.ResetBindings(false);
         }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

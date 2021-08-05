@@ -34,38 +34,38 @@
             this.PanelSubMenuSeguridad = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnSeguridad = new System.Windows.Forms.Button();
             this.PanelSubmenuReportes = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
-            this.btnFacturas = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.btnProducto = new System.Windows.Forms.Button();
             this.Logo = new System.Windows.Forms.Panel();
-            this.botonInicio = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TituloFrmHijo = new System.Windows.Forms.Label();
-            this.iconodeFormHijo = new System.Windows.Forms.PictureBox();
-            this.PanelEscritorio = new System.Windows.Forms.Panel();
-            this.lblfecha = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblhora = new System.Windows.Forms.Label();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.panelVentanaBTN = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.buttonSalir = new System.Windows.Forms.Button();
+            this.iconodeFormHijo = new System.Windows.Forms.PictureBox();
+            this.btnSeguridad = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnFacturas = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.btnProducto = new System.Windows.Forms.Button();
+            this.botonInicio = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.PanelEscritorio = new System.Windows.Forms.Panel();
+            this.lblhora = new System.Windows.Forms.Label();
+            this.lblfecha = new System.Windows.Forms.Label();
             this.Botones.SuspendLayout();
             this.PanelSubMenuSeguridad.SuspendLayout();
             this.PanelSubmenuReportes.SuspendLayout();
             this.Logo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconodeFormHijo)).BeginInit();
-            this.PanelEscritorio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelVentanaBTN.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconodeFormHijo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PanelEscritorio.SuspendLayout();
             this.SuspendLayout();
             // 
             // Botones
@@ -139,25 +139,6 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnSeguridad
-            // 
-            this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSeguridad.FlatAppearance.BorderSize = 0;
-            this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSeguridad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeguridad.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSeguridad.Image = global::Win.Supermercado.Properties.Resources.empleados1;
-            this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 355);
-            this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Size = new System.Drawing.Size(186, 50);
-            this.btnSeguridad.TabIndex = 6;
-            this.btnSeguridad.Text = "Seguridad";
-            this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSeguridad.UseVisualStyleBackColor = true;
-            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
-            // 
             // PanelSubmenuReportes
             // 
             this.PanelSubmenuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(20)))), ((int)(((byte)(70)))));
@@ -204,6 +185,126 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Logo
+            // 
+            this.Logo.Controls.Add(this.botonInicio);
+            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(186, 99);
+            this.Logo.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
+            this.panel2.Controls.Add(this.TituloFrmHijo);
+            this.panel2.Controls.Add(this.iconodeFormHijo);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(186, 495);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(772, 52);
+            this.panel2.TabIndex = 1;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // TituloFrmHijo
+            // 
+            this.TituloFrmHijo.AutoSize = true;
+            this.TituloFrmHijo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TituloFrmHijo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.TituloFrmHijo.Location = new System.Drawing.Point(72, 22);
+            this.TituloFrmHijo.Name = "TituloFrmHijo";
+            this.TituloFrmHijo.Size = new System.Drawing.Size(51, 21);
+            this.TituloFrmHijo.TabIndex = 1;
+            this.TituloFrmHijo.Text = "Inicio";
+            // 
+            // horafecha
+            // 
+            this.horafecha.Enabled = true;
+            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
+            // 
+            // panelVentanaBTN
+            // 
+            this.panelVentanaBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
+            this.panelVentanaBTN.Controls.Add(this.button6);
+            this.panelVentanaBTN.Controls.Add(this.button5);
+            this.panelVentanaBTN.Controls.Add(this.buttonSalir);
+            this.panelVentanaBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVentanaBTN.Location = new System.Drawing.Point(186, 0);
+            this.panelVentanaBTN.Name = "panelVentanaBTN";
+            this.panelVentanaBTN.Size = new System.Drawing.Size(772, 27);
+            this.panelVentanaBTN.TabIndex = 3;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = global::Win.Supermercado.Properties.Resources.Icono_Minimizar;
+            this.button6.Location = new System.Drawing.Point(684, 7);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(21, 27);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::Win.Supermercado.Properties.Resources.Icono_Maximizar;
+            this.button5.Location = new System.Drawing.Point(711, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(20, 19);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // buttonSalir
+            // 
+            this.buttonSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSalir.FlatAppearance.BorderSize = 0;
+            this.buttonSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.buttonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalir.Image = global::Win.Supermercado.Properties.Resources.Icono_cerrar_FN1;
+            this.buttonSalir.Location = new System.Drawing.Point(741, 2);
+            this.buttonSalir.Name = "buttonSalir";
+            this.buttonSalir.Size = new System.Drawing.Size(23, 23);
+            this.buttonSalir.TabIndex = 4;
+            this.buttonSalir.UseVisualStyleBackColor = true;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
+            // 
+            // iconodeFormHijo
+            // 
+            this.iconodeFormHijo.Image = global::Win.Supermercado.Properties.Resources.venta1;
+            this.iconodeFormHijo.Location = new System.Drawing.Point(16, 7);
+            this.iconodeFormHijo.Name = "iconodeFormHijo";
+            this.iconodeFormHijo.Size = new System.Drawing.Size(50, 45);
+            this.iconodeFormHijo.TabIndex = 0;
+            this.iconodeFormHijo.TabStop = false;
+            // 
+            // btnSeguridad
+            // 
+            this.btnSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSeguridad.FlatAppearance.BorderSize = 0;
+            this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeguridad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSeguridad.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSeguridad.Image = global::Win.Supermercado.Properties.Resources.empleados1;
+            this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 355);
+            this.btnSeguridad.Name = "btnSeguridad";
+            this.btnSeguridad.Size = new System.Drawing.Size(186, 50);
+            this.btnSeguridad.TabIndex = 6;
+            this.btnSeguridad.Text = "Seguridad";
+            this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSeguridad.UseVisualStyleBackColor = true;
+            this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
             // 
             // btnReportes
             // 
@@ -281,15 +382,6 @@
             this.btnProducto.UseVisualStyleBackColor = true;
             this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
-            // Logo
-            // 
-            this.Logo.Controls.Add(this.botonInicio);
-            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(186, 99);
-            this.Logo.TabIndex = 0;
-            // 
             // botonInicio
             // 
             this.botonInicio.Image = global::Win.Supermercado.Properties.Resources.Logo__Opcion_2_blanco_PNG_;
@@ -301,155 +393,54 @@
             this.botonInicio.TabStop = false;
             this.botonInicio.Click += new System.EventHandler(this.botonInicio_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
-            this.panel2.Controls.Add(this.TituloFrmHijo);
-            this.panel2.Controls.Add(this.iconodeFormHijo);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(186, 495);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(772, 52);
-            this.panel2.TabIndex = 1;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // TituloFrmHijo
-            // 
-            this.TituloFrmHijo.AutoSize = true;
-            this.TituloFrmHijo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TituloFrmHijo.ForeColor = System.Drawing.Color.Gainsboro;
-            this.TituloFrmHijo.Location = new System.Drawing.Point(72, 22);
-            this.TituloFrmHijo.Name = "TituloFrmHijo";
-            this.TituloFrmHijo.Size = new System.Drawing.Size(51, 21);
-            this.TituloFrmHijo.TabIndex = 1;
-            this.TituloFrmHijo.Text = "Inicio";
-            // 
-            // iconodeFormHijo
-            // 
-            this.iconodeFormHijo.Image = global::Win.Supermercado.Properties.Resources.venta1;
-            this.iconodeFormHijo.Location = new System.Drawing.Point(16, 7);
-            this.iconodeFormHijo.Name = "iconodeFormHijo";
-            this.iconodeFormHijo.Size = new System.Drawing.Size(50, 45);
-            this.iconodeFormHijo.TabIndex = 0;
-            this.iconodeFormHijo.TabStop = false;
-            // 
-            // PanelEscritorio
-            // 
-            this.PanelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.PanelEscritorio.Controls.Add(this.lblfecha);
-            this.PanelEscritorio.Controls.Add(this.pictureBox2);
-            this.PanelEscritorio.Controls.Add(this.lblhora);
-            this.PanelEscritorio.Location = new System.Drawing.Point(186, 26);
-            this.PanelEscritorio.Name = "PanelEscritorio";
-            this.PanelEscritorio.Size = new System.Drawing.Size(772, 469);
-            this.PanelEscritorio.TabIndex = 2;
-            // 
-            // lblfecha
-            // 
-            this.lblfecha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblfecha.AutoSize = true;
-            this.lblfecha.BackColor = System.Drawing.Color.Transparent;
-            this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfecha.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblfecha.Location = new System.Drawing.Point(296, 328);
-            this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(57, 21);
-            this.lblfecha.TabIndex = 3;
-            this.lblfecha.Text = "label1";
-            this.lblfecha.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Win.Supermercado.Properties.Resources.Logo__Opcion_2_blanco_PNG_;
-            this.pictureBox2.Location = new System.Drawing.Point(271, 186);
+            this.pictureBox2.Location = new System.Drawing.Point(257, 154);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(277, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // PanelEscritorio
+            // 
+            this.PanelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(63)))), ((int)(((byte)(83)))));
+            this.PanelEscritorio.Controls.Add(this.lblfecha);
+            this.PanelEscritorio.Controls.Add(this.lblhora);
+            this.PanelEscritorio.Controls.Add(this.pictureBox2);
+            this.PanelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelEscritorio.Location = new System.Drawing.Point(186, 27);
+            this.PanelEscritorio.Name = "PanelEscritorio";
+            this.PanelEscritorio.Size = new System.Drawing.Size(772, 468);
+            this.PanelEscritorio.TabIndex = 4;
+            // 
             // lblhora
             // 
-            this.lblhora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblhora.AutoSize = true;
-            this.lblhora.BackColor = System.Drawing.Color.Transparent;
-            this.lblhora.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhora.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblhora.Location = new System.Drawing.Point(364, 300);
+            this.lblhora.Location = new System.Drawing.Point(374, 272);
             this.lblhora.Name = "lblhora";
-            this.lblhora.Size = new System.Drawing.Size(74, 24);
+            this.lblhora.Size = new System.Drawing.Size(38, 13);
             this.lblhora.TabIndex = 2;
-            this.lblhora.Text = "label1";
-            this.lblhora.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblhora.Text = "lblhora";
             // 
-            // horafecha
+            // lblfecha
             // 
-            this.horafecha.Enabled = true;
-            this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
-            // 
-            // panelVentanaBTN
-            // 
-            this.panelVentanaBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
-            this.panelVentanaBTN.Controls.Add(this.button6);
-            this.panelVentanaBTN.Controls.Add(this.button5);
-            this.panelVentanaBTN.Controls.Add(this.buttonSalir);
-            this.panelVentanaBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelVentanaBTN.Location = new System.Drawing.Point(186, 0);
-            this.panelVentanaBTN.Name = "panelVentanaBTN";
-            this.panelVentanaBTN.Size = new System.Drawing.Size(772, 27);
-            this.panelVentanaBTN.TabIndex = 3;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = global::Win.Supermercado.Properties.Resources.Icono_Minimizar;
-            this.button6.Location = new System.Drawing.Point(684, 7);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(21, 27);
-            this.button6.TabIndex = 6;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = global::Win.Supermercado.Properties.Resources.Icono_Maximizar;
-            this.button5.Location = new System.Drawing.Point(711, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(20, 19);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // buttonSalir
-            // 
-            this.buttonSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSalir.FlatAppearance.BorderSize = 0;
-            this.buttonSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.buttonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalir.Image = global::Win.Supermercado.Properties.Resources.Icono_cerrar_FN1;
-            this.buttonSalir.Location = new System.Drawing.Point(741, 2);
-            this.buttonSalir.Name = "buttonSalir";
-            this.buttonSalir.Size = new System.Drawing.Size(23, 23);
-            this.buttonSalir.TabIndex = 4;
-            this.buttonSalir.UseVisualStyleBackColor = true;
-            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.Location = new System.Drawing.Point(374, 288);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(44, 13);
+            this.lblfecha.TabIndex = 3;
+            this.lblfecha.Text = "lblfecha";
             // 
             // FrrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 547);
-            this.Controls.Add(this.panelVentanaBTN);
             this.Controls.Add(this.PanelEscritorio);
+            this.Controls.Add(this.panelVentanaBTN);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Botones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -460,14 +451,14 @@
             this.PanelSubMenuSeguridad.ResumeLayout(false);
             this.PanelSubmenuReportes.ResumeLayout(false);
             this.Logo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelVentanaBTN.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconodeFormHijo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.PanelEscritorio.ResumeLayout(false);
             this.PanelEscritorio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panelVentanaBTN.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -490,16 +481,16 @@
         private System.Windows.Forms.Panel PanelSubMenuSeguridad;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel PanelEscritorio;
         private System.Windows.Forms.PictureBox botonInicio;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.Label lblfecha;
-        private System.Windows.Forms.Label lblhora;
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.Panel panelVentanaBTN;
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel PanelEscritorio;
+        private System.Windows.Forms.Label lblfecha;
+        private System.Windows.Forms.Label lblhora;
     }
 }

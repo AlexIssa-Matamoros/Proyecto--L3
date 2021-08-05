@@ -66,7 +66,22 @@
             this.listaTiposBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.descripcionComboBox = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.PanelOPC = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCancelar = new System.Windows.Forms.PictureBox();
+            this.BtnGuardar = new System.Windows.Forms.PictureBox();
+            this.BtnBorrar = new System.Windows.Forms.PictureBox();
+            this.BtnAgregar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.PanelMant = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.listaProductosDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             activoLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
             existenciaLabel = new System.Windows.Forms.Label();
@@ -80,77 +95,98 @@
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaCategoriasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaTiposBindingSource)).BeginInit();
+            this.PanelOPC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).BeginInit();
+            this.PanelMant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaProductosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // activoLabel
             // 
             activoLabel.AutoSize = true;
-            activoLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            activoLabel.Location = new System.Drawing.Point(53, 290);
+            activoLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            activoLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            activoLabel.Location = new System.Drawing.Point(58, 243);
             activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(46, 16);
+            activoLabel.Size = new System.Drawing.Size(62, 20);
             activoLabel.TabIndex = 1;
             activoLabel.Text = "Activo:";
             // 
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descripcionLabel.Location = new System.Drawing.Point(53, 142);
+            descripcionLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descripcionLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            descripcionLabel.Location = new System.Drawing.Point(58, 97);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(73, 16);
+            descripcionLabel.Size = new System.Drawing.Size(100, 20);
             descripcionLabel.TabIndex = 3;
             descripcionLabel.Text = "Descripcion:";
+            descripcionLabel.Click += new System.EventHandler(this.descripcionLabel_Click);
             // 
             // existenciaLabel
             // 
             existenciaLabel.AutoSize = true;
-            existenciaLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            existenciaLabel.Location = new System.Drawing.Point(53, 236);
+            existenciaLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            existenciaLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            existenciaLabel.Location = new System.Drawing.Point(58, 191);
             existenciaLabel.Name = "existenciaLabel";
-            existenciaLabel.Size = new System.Drawing.Size(64, 16);
+            existenciaLabel.Size = new System.Drawing.Size(84, 20);
             existenciaLabel.TabIndex = 5;
             existenciaLabel.Text = "Existencia:";
+            existenciaLabel.Click += new System.EventHandler(this.existenciaLabel_Click);
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idLabel.Location = new System.Drawing.Point(53, 116);
+            idLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            idLabel.Location = new System.Drawing.Point(58, 71);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(22, 16);
+            idLabel.Size = new System.Drawing.Size(28, 20);
             idLabel.TabIndex = 7;
             idLabel.Text = "Id:";
+            idLabel.Click += new System.EventHandler(this.idLabel_Click);
             // 
             // precioLabel
             // 
             precioLabel.AutoSize = true;
-            precioLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            precioLabel.Location = new System.Drawing.Point(53, 262);
+            precioLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            precioLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            precioLabel.Location = new System.Drawing.Point(58, 217);
             precioLabel.Name = "precioLabel";
-            precioLabel.Size = new System.Drawing.Size(44, 16);
+            precioLabel.Size = new System.Drawing.Size(60, 20);
             precioLabel.TabIndex = 9;
             precioLabel.Text = "Precio:";
+            precioLabel.Click += new System.EventHandler(this.precioLabel_Click);
             // 
             // categoriaIdLabel
             // 
             categoriaIdLabel.AutoSize = true;
-            categoriaIdLabel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            categoriaIdLabel.Location = new System.Drawing.Point(53, 205);
+            categoriaIdLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            categoriaIdLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            categoriaIdLabel.Location = new System.Drawing.Point(56, 162);
             categoriaIdLabel.Name = "categoriaIdLabel";
-            categoriaIdLabel.Size = new System.Drawing.Size(63, 16);
+            categoriaIdLabel.Size = new System.Drawing.Size(84, 20);
             categoriaIdLabel.TabIndex = 14;
             categoriaIdLabel.Text = "Categoria";
+            categoriaIdLabel.Click += new System.EventHandler(this.categoriaIdLabel_Click);
             // 
             // descripcionLabel1
             // 
             descripcionLabel1.AutoSize = true;
-            descripcionLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descripcionLabel1.Location = new System.Drawing.Point(53, 173);
+            descripcionLabel1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descripcionLabel1.ForeColor = System.Drawing.Color.Gainsboro;
+            descripcionLabel1.Location = new System.Drawing.Point(58, 130);
             descripcionLabel1.Name = "descripcionLabel1";
-            descripcionLabel1.Size = new System.Drawing.Size(30, 16);
+            descripcionLabel1.Size = new System.Drawing.Size(37, 20);
             descripcionLabel1.TabIndex = 16;
             descripcionLabel1.Text = "Tipo";
+            descripcionLabel1.Click += new System.EventHandler(this.descripcionLabel1_Click);
             // 
             // listaProductosBindingNavigator
             // 
@@ -179,9 +215,10 @@
             this.listaProductosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaProductosBindingNavigator.Name = "listaProductosBindingNavigator";
             this.listaProductosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaProductosBindingNavigator.Size = new System.Drawing.Size(756, 25);
+            this.listaProductosBindingNavigator.Size = new System.Drawing.Size(961, 25);
             this.listaProductosBindingNavigator.TabIndex = 0;
             this.listaProductosBindingNavigator.Text = "bindingNavigator1";
+            this.listaProductosBindingNavigator.Visible = false;
             // 
             // listaProductosBindingSource
             // 
@@ -291,12 +328,13 @@
             this.toolStripButtonCancelar.Name = "toolStripButtonCancelar";
             this.toolStripButtonCancelar.Size = new System.Drawing.Size(57, 22);
             this.toolStripButtonCancelar.Text = "Cancelar";
+            this.toolStripButtonCancelar.Visible = false;
             this.toolStripButtonCancelar.Click += new System.EventHandler(this.toolStripButtonCancelar_Click);
             // 
             // activoCheckBox
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listaProductosBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(129, 285);
+            this.activoCheckBox.Location = new System.Drawing.Point(164, 243);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(104, 24);
             this.activoCheckBox.TabIndex = 2;
@@ -306,41 +344,45 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaProductosBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(129, 138);
+            this.descripcionTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcionTextBox.Location = new System.Drawing.Point(164, 96);
             this.descripcionTextBox.Name = "descripcionTextBox";
-            this.descripcionTextBox.Size = new System.Drawing.Size(262, 20);
+            this.descripcionTextBox.Size = new System.Drawing.Size(227, 21);
             this.descripcionTextBox.TabIndex = 4;
             // 
             // existenciaTextBox
             // 
             this.existenciaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaProductosBindingSource, "Existencia", true));
-            this.existenciaTextBox.Location = new System.Drawing.Point(129, 232);
+            this.existenciaTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.existenciaTextBox.Location = new System.Drawing.Point(164, 190);
             this.existenciaTextBox.Name = "existenciaTextBox";
-            this.existenciaTextBox.Size = new System.Drawing.Size(262, 20);
+            this.existenciaTextBox.Size = new System.Drawing.Size(227, 21);
             this.existenciaTextBox.TabIndex = 6;
             // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaProductosBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(129, 112);
+            this.idTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idTextBox.Location = new System.Drawing.Point(164, 70);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
-            this.idTextBox.Size = new System.Drawing.Size(262, 20);
+            this.idTextBox.Size = new System.Drawing.Size(227, 21);
             this.idTextBox.TabIndex = 8;
             // 
             // precioTextBox
             // 
             this.precioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaProductosBindingSource, "Precio", true));
-            this.precioTextBox.Location = new System.Drawing.Point(129, 258);
+            this.precioTextBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.precioTextBox.Location = new System.Drawing.Point(164, 216);
             this.precioTextBox.Name = "precioTextBox";
-            this.precioTextBox.Size = new System.Drawing.Size(262, 20);
+            this.precioTextBox.Size = new System.Drawing.Size(227, 21);
             this.precioTextBox.TabIndex = 10;
             // 
             // fotoPictureBox
             // 
             this.fotoPictureBox.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listaProductosBindingSource, "Foto", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.fotoPictureBox.Location = new System.Drawing.Point(420, 112);
+            this.fotoPictureBox.Location = new System.Drawing.Point(164, 273);
             this.fotoPictureBox.Name = "fotoPictureBox";
             this.fotoPictureBox.Size = new System.Drawing.Size(155, 134);
             this.fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -349,22 +391,32 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(600, 142);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button1.Location = new System.Drawing.Point(138, 423);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 23);
+            this.button1.Size = new System.Drawing.Size(98, 33);
             this.button1.TabIndex = 13;
             this.button1.Text = "Agregar Foto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(600, 198);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button2.Location = new System.Drawing.Point(273, 423);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 23);
+            this.button2.Size = new System.Drawing.Size(98, 33);
             this.button2.TabIndex = 14;
             this.button2.Text = "Remover Foto";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // openFileDialog1
@@ -382,10 +434,11 @@
             this.categoriaIdComboBox.DataSource = this.listaCategoriasBindingSource;
             this.categoriaIdComboBox.DisplayMember = "Descripcion";
             this.categoriaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categoriaIdComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoriaIdComboBox.FormattingEnabled = true;
-            this.categoriaIdComboBox.Location = new System.Drawing.Point(129, 200);
+            this.categoriaIdComboBox.Location = new System.Drawing.Point(164, 158);
             this.categoriaIdComboBox.Name = "categoriaIdComboBox";
-            this.categoriaIdComboBox.Size = new System.Drawing.Size(262, 21);
+            this.categoriaIdComboBox.Size = new System.Drawing.Size(227, 24);
             this.categoriaIdComboBox.TabIndex = 15;
             this.categoriaIdComboBox.ValueMember = "Id";
             // 
@@ -399,54 +452,215 @@
             this.descripcionComboBox.DataSource = this.listaTiposBindingSource;
             this.descripcionComboBox.DisplayMember = "Descripcion";
             this.descripcionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.descripcionComboBox.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcionComboBox.FormattingEnabled = true;
-            this.descripcionComboBox.Location = new System.Drawing.Point(129, 168);
+            this.descripcionComboBox.Location = new System.Drawing.Point(164, 126);
             this.descripcionComboBox.Name = "descripcionComboBox";
-            this.descripcionComboBox.Size = new System.Drawing.Size(262, 21);
+            this.descripcionComboBox.Size = new System.Drawing.Size(227, 24);
             this.descripcionComboBox.TabIndex = 17;
             this.descripcionComboBox.ValueMember = "Id";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(420, 293);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(580, 21);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 20);
             this.textBox1.TabIndex = 18;
+            this.textBox1.Text = "Buscar...";
             // 
-            // button3
+            // PanelOPC
             // 
-            this.button3.Location = new System.Drawing.Point(600, 290);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(98, 23);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Buscar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.PanelOPC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.PanelOPC.Controls.Add(this.pictureBox1);
+            this.PanelOPC.Controls.Add(this.BtnCancelar);
+            this.PanelOPC.Controls.Add(this.BtnGuardar);
+            this.PanelOPC.Controls.Add(this.textBox1);
+            this.PanelOPC.Controls.Add(this.BtnBorrar);
+            this.PanelOPC.Controls.Add(this.BtnAgregar);
+            this.PanelOPC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelOPC.Location = new System.Drawing.Point(0, 0);
+            this.PanelOPC.Name = "PanelOPC";
+            this.PanelOPC.Size = new System.Drawing.Size(756, 59);
+            this.PanelOPC.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.data_analysis_icon_icons_com_52842;
+            this.pictureBox1.Location = new System.Drawing.Point(529, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Image = global::Win.Supermercado.Properties.Resources.cancel_77947;
+            this.BtnCancelar.Location = new System.Drawing.Point(203, 9);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(45, 41);
+            this.BtnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnCancelar.TabIndex = 3;
+            this.BtnCancelar.TabStop = false;
+            this.BtnCancelar.Visible = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Image = global::Win.Supermercado.Properties.Resources._1486485555_188backup_disk_data_data_storage_floppy_save_81149;
+            this.BtnGuardar.Location = new System.Drawing.Point(138, 9);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(45, 41);
+            this.BtnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnGuardar.TabIndex = 2;
+            this.BtnGuardar.TabStop = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.Image = global::Win.Supermercado.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
+            this.BtnBorrar.Location = new System.Drawing.Point(72, 9);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(45, 41);
+            this.BtnBorrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnBorrar.TabIndex = 1;
+            this.BtnBorrar.TabStop = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Image = global::Win.Supermercado.Properties.Resources._1486485586_add_document_contract_agreement_notic_file_plus_81158;
+            this.BtnAgregar.Location = new System.Drawing.Point(5, 9);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(45, 41);
+            this.BtnAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnAgregar.TabIndex = 0;
+            this.BtnAgregar.TabStop = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(58, 304);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 20);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Foto:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // PanelMant
+            // 
+            this.PanelMant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(68)))), ((int)(((byte)(90)))));
+            this.PanelMant.Controls.Add(this.label3);
+            this.PanelMant.Controls.Add(this.fotoPictureBox);
+            this.PanelMant.Controls.Add(this.precioTextBox);
+            this.PanelMant.Controls.Add(this.label1);
+            this.PanelMant.Controls.Add(precioLabel);
+            this.PanelMant.Controls.Add(activoLabel);
+            this.PanelMant.Controls.Add(this.idTextBox);
+            this.PanelMant.Controls.Add(this.activoCheckBox);
+            this.PanelMant.Controls.Add(descripcionLabel1);
+            this.PanelMant.Controls.Add(this.button1);
+            this.PanelMant.Controls.Add(idLabel);
+            this.PanelMant.Controls.Add(descripcionLabel);
+            this.PanelMant.Controls.Add(this.descripcionComboBox);
+            this.PanelMant.Controls.Add(this.button2);
+            this.PanelMant.Controls.Add(this.existenciaTextBox);
+            this.PanelMant.Controls.Add(this.descripcionTextBox);
+            this.PanelMant.Controls.Add(categoriaIdLabel);
+            this.PanelMant.Controls.Add(this.categoriaIdComboBox);
+            this.PanelMant.Controls.Add(existenciaLabel);
+            this.PanelMant.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMant.Location = new System.Drawing.Point(0, 59);
+            this.PanelMant.Name = "PanelMant";
+            this.PanelMant.Size = new System.Drawing.Size(498, 370);
+            this.PanelMant.TabIndex = 23;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Olive;
+            this.label3.Location = new System.Drawing.Point(58, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(222, 20);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Mantenimiento de Productos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(517, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 20);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Listado de Productos";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // listaProductosDataGridView
+            // 
+            this.listaProductosDataGridView.AutoGenerateColumns = false;
+            this.listaProductosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaProductosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewCheckBoxColumn1});
+            this.listaProductosDataGridView.DataSource = this.listaProductosBindingSource;
+            this.listaProductosDataGridView.Location = new System.Drawing.Point(521, 129);
+            this.listaProductosDataGridView.Name = "listaProductosDataGridView";
+            this.listaProductosDataGridView.Size = new System.Drawing.Size(431, 220);
+            this.listaProductosDataGridView.TabIndex = 20;
+            this.listaProductosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaProductosDataGridView_CellContentClick);
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Activo";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Activo";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Existencia";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Existencia";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Precio";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Descripcion";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 430);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(descripcionLabel1);
-            this.Controls.Add(this.descripcionComboBox);
-            this.Controls.Add(categoriaIdLabel);
-            this.Controls.Add(this.categoriaIdComboBox);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.fotoPictureBox);
-            this.Controls.Add(activoLabel);
-            this.Controls.Add(this.activoCheckBox);
-            this.Controls.Add(descripcionLabel);
-            this.Controls.Add(this.descripcionTextBox);
-            this.Controls.Add(existenciaLabel);
-            this.Controls.Add(this.existenciaTextBox);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
-            this.Controls.Add(precioLabel);
-            this.Controls.Add(this.precioTextBox);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(83)))), ((int)(((byte)(109)))));
+            this.ClientSize = new System.Drawing.Size(756, 429);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.listaProductosDataGridView);
+            this.Controls.Add(this.PanelMant);
+            this.Controls.Add(this.PanelOPC);
             this.Controls.Add(this.listaProductosBindingNavigator);
             this.Name = "FrmProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -459,6 +673,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.fotoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaCategoriasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaTiposBindingSource)).EndInit();
+            this.PanelOPC.ResumeLayout(false);
+            this.PanelOPC.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).EndInit();
+            this.PanelMant.ResumeLayout(false);
+            this.PanelMant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaProductosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -495,6 +719,21 @@
         private System.Windows.Forms.BindingSource listaTiposBindingSource;
         private System.Windows.Forms.ComboBox descripcionComboBox;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel PanelOPC;
+        private System.Windows.Forms.PictureBox BtnAgregar;
+        private System.Windows.Forms.PictureBox BtnCancelar;
+        private System.Windows.Forms.PictureBox BtnGuardar;
+        private System.Windows.Forms.PictureBox BtnBorrar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel PanelMant;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView listaProductosDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }

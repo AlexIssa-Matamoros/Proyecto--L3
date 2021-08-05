@@ -63,6 +63,46 @@ namespace Win.Supermercado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1486485555_188backup_disk_data_data_storage_floppy_save_81149 {
+            get {
+                object obj = ResourceManager.GetObject("1486485555-188backup-disk-data-data-storage-floppy-save_81149", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486485586_add_document_contract_agreement_notic_file_plus_81158 {
+            get {
+                object obj = ResourceManager.GetObject("1486485586-add-document-contract-agreement-notic-file-plus_81158", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361 {
+            get {
+                object obj = ResourceManager.GetObject("1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_77947 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_77947", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clientes {
             get {
                 object obj = ResourceManager.GetObject("clientes", resourceCulture);
@@ -96,6 +136,16 @@ namespace Win.Supermercado.Properties {
         internal static System.Drawing.Bitmap cybersecurity_lock1 {
             get {
                 object obj = ResourceManager.GetObject("cybersecurity-lock1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap data_analysis_icon_icons_com_52842 {
+            get {
+                object obj = ResourceManager.GetObject("data-analysis_icon-icons.com_52842", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

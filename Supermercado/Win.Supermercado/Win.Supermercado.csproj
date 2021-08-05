@@ -316,6 +316,21 @@
   <ItemGroup>
     <None Include="Resources\Icono cerrar FN1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485586-add-document-contract-agreement-notic-file-plus_81158.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486485555-188backup-disk-data-data-storage-floppy-save_81149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_77947.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-analysis_icon-icons.com_52842.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
