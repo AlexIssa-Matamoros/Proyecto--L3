@@ -52,6 +52,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblhora = new System.Windows.Forms.Label();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
+            this.panelVentanaBTN = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.buttonSalir = new System.Windows.Forms.Button();
             this.Botones.SuspendLayout();
             this.PanelSubMenuSeguridad.SuspendLayout();
             this.PanelSubmenuReportes.SuspendLayout();
@@ -61,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconodeFormHijo)).BeginInit();
             this.PanelEscritorio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelVentanaBTN.SuspendLayout();
             this.SuspendLayout();
             // 
             // Botones
@@ -334,10 +339,9 @@
             this.PanelEscritorio.Controls.Add(this.lblfecha);
             this.PanelEscritorio.Controls.Add(this.pictureBox2);
             this.PanelEscritorio.Controls.Add(this.lblhora);
-            this.PanelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelEscritorio.Location = new System.Drawing.Point(186, 0);
+            this.PanelEscritorio.Location = new System.Drawing.Point(186, 26);
             this.PanelEscritorio.Name = "PanelEscritorio";
-            this.PanelEscritorio.Size = new System.Drawing.Size(772, 495);
+            this.PanelEscritorio.Size = new System.Drawing.Size(772, 469);
             this.PanelEscritorio.TabIndex = 2;
             // 
             // lblfecha
@@ -347,7 +351,7 @@
             this.lblfecha.BackColor = System.Drawing.Color.Transparent;
             this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblfecha.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblfecha.Location = new System.Drawing.Point(296, 341);
+            this.lblfecha.Location = new System.Drawing.Point(296, 328);
             this.lblfecha.Name = "lblfecha";
             this.lblfecha.Size = new System.Drawing.Size(57, 21);
             this.lblfecha.TabIndex = 3;
@@ -358,7 +362,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Win.Supermercado.Properties.Resources.Logo__Opcion_2_blanco_PNG_;
-            this.pictureBox2.Location = new System.Drawing.Point(271, 199);
+            this.pictureBox2.Location = new System.Drawing.Point(271, 186);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(277, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -372,7 +376,7 @@
             this.lblhora.BackColor = System.Drawing.Color.Transparent;
             this.lblhora.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblhora.Location = new System.Drawing.Point(364, 313);
+            this.lblhora.Location = new System.Drawing.Point(364, 300);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(74, 24);
             this.lblhora.TabIndex = 2;
@@ -384,17 +388,73 @@
             this.horafecha.Enabled = true;
             this.horafecha.Tick += new System.EventHandler(this.horafecha_Tick);
             // 
+            // panelVentanaBTN
+            // 
+            this.panelVentanaBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
+            this.panelVentanaBTN.Controls.Add(this.button6);
+            this.panelVentanaBTN.Controls.Add(this.button5);
+            this.panelVentanaBTN.Controls.Add(this.buttonSalir);
+            this.panelVentanaBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVentanaBTN.Location = new System.Drawing.Point(186, 0);
+            this.panelVentanaBTN.Name = "panelVentanaBTN";
+            this.panelVentanaBTN.Size = new System.Drawing.Size(772, 27);
+            this.panelVentanaBTN.TabIndex = 3;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = global::Win.Supermercado.Properties.Resources.Icono_Minimizar;
+            this.button6.Location = new System.Drawing.Point(684, 7);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(21, 27);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = global::Win.Supermercado.Properties.Resources.Icono_Maximizar;
+            this.button5.Location = new System.Drawing.Point(711, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(20, 19);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // buttonSalir
+            // 
+            this.buttonSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSalir.FlatAppearance.BorderSize = 0;
+            this.buttonSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.buttonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSalir.Image = global::Win.Supermercado.Properties.Resources.Icono_cerrar_FN1;
+            this.buttonSalir.Location = new System.Drawing.Point(741, 2);
+            this.buttonSalir.Name = "buttonSalir";
+            this.buttonSalir.Size = new System.Drawing.Size(23, 23);
+            this.buttonSalir.TabIndex = 4;
+            this.buttonSalir.UseVisualStyleBackColor = true;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
+            // 
             // FrrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 547);
+            this.Controls.Add(this.panelVentanaBTN);
             this.Controls.Add(this.PanelEscritorio);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Botones);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrrmMenu";
             this.Text = "FrrmMenu";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Botones.ResumeLayout(false);
             this.Botones.PerformLayout();
             this.PanelSubMenuSeguridad.ResumeLayout(false);
@@ -407,6 +467,7 @@
             this.PanelEscritorio.ResumeLayout(false);
             this.PanelEscritorio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelVentanaBTN.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -436,5 +497,9 @@
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label lblhora;
         private System.Windows.Forms.Timer horafecha;
+        private System.Windows.Forms.Panel panelVentanaBTN;
+        private System.Windows.Forms.Button buttonSalir;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
     }
 }
