@@ -281,18 +281,39 @@ namespace Win.Supermercado
                 lbluser.Text = Program.UsuarioLogueado.Nombre;
             }
 
-
-            if (Program.UsuarioLogueado.TipoUsuario == "Usuarios caja")
+            if (Program.UsuarioLogueado.TipoUsuario == "Usuarios Cajas")
             {
                 btnProducto.Visible = false; //producto
                 btnClientes.Visible = false; //cliente
 
                 btnFacturas.Visible = true; //fac
-                btnSeguridad.Visible = false; //usu
+                btnSeguridad.Visible = true; //usu
                 button1.Visible = false; //re-pro
                 button2.Visible = true; //-re-fac
+                button3.Visible = false; //ad us
             }
 
+            if (Program.UsuarioLogueado.TipoUsuario == "Usuarios Ventas")
+            {
+                btnProducto.Visible = false; //producto
+                btnClientes.Visible = true; //cliente
+                //agregar reporte de clientes
+                btnFacturas.Visible = false; //fac
+                btnSeguridad.Visible = true; //usu
+                button1.Visible = false; //re-pro
+                button2.Visible = false; //-re-fac
+                button3.Visible = false; //ad usuario
+            }
+
+            if (Program.UsuarioLogueado.TipoUsuario == "Administradores")
+            {
+                btnProducto.Visible = true; //producto
+                btnClientes.Visible = true; //cliente
+                //agregar reporte de clientes
+                btnFacturas.Visible = true; //fac
+                btnSeguridad.Visible = true; //usu
+                btnReportes.Visible = true;
+            }
         }
 
         private void FrrmMenu_Load(object sender, EventArgs e)
@@ -308,7 +329,7 @@ namespace Win.Supermercado
 
         private void Botones_Paint(object sender, PaintEventArgs e)
         {
-            DatosUsuario();
+           
         }
     }
 }
