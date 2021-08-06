@@ -77,11 +77,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listaProductosDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             activoLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
             existenciaLabel = new System.Windows.Forms.Label();
@@ -463,11 +463,15 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(580, 21);
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(580, 17);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 20);
+            this.textBox1.Size = new System.Drawing.Size(155, 26);
             this.textBox1.TabIndex = 18;
             this.textBox1.Text = "Buscar...";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // PanelOPC
             // 
@@ -617,27 +621,15 @@
             this.listaProductosDataGridView.DataSource = this.listaProductosBindingSource;
             this.listaProductosDataGridView.Location = new System.Drawing.Point(521, 129);
             this.listaProductosDataGridView.Name = "listaProductosDataGridView";
-            this.listaProductosDataGridView.Size = new System.Drawing.Size(431, 220);
+            this.listaProductosDataGridView.Size = new System.Drawing.Size(542, 337);
             this.listaProductosDataGridView.TabIndex = 20;
             this.listaProductosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaProductosDataGridView_CellContentClick);
             // 
-            // dataGridViewCheckBoxColumn1
+            // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Activo";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Activo";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Existencia";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Existencia";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Precio";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Precio";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -645,11 +637,23 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Descripcion";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Precio";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Existencia";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Existencia";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Activo";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Activo";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
             // FrmProductos
             // 
@@ -666,6 +670,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.FrmProductos_Load);
+            this.Leave += new System.EventHandler(this.FrmProductos_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.listaProductosBindingNavigator)).EndInit();
             this.listaProductosBindingNavigator.ResumeLayout(false);
             this.listaProductosBindingNavigator.PerformLayout();

@@ -67,9 +67,20 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnCancelar = new System.Windows.Forms.PictureBox();
+            this.BtnGuardar = new System.Windows.Forms.PictureBox();
+            this.BtnBorrar = new System.Windows.Forms.PictureBox();
+            this.BtnAgregar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             activoLabel = new System.Windows.Forms.Label();
             clienteIdLabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
@@ -84,68 +95,90 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaProductosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleDataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // activoLabel
             // 
             activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(268, 49);
+            activoLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            activoLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            activoLabel.Location = new System.Drawing.Point(230, 82);
             activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(40, 13);
+            activoLabel.Size = new System.Drawing.Size(62, 20);
             activoLabel.TabIndex = 1;
             activoLabel.Text = "Activo:";
             // 
             // clienteIdLabel
             // 
             clienteIdLabel.AutoSize = true;
-            clienteIdLabel.Location = new System.Drawing.Point(50, 101);
+            clienteIdLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            clienteIdLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            clienteIdLabel.Location = new System.Drawing.Point(13, 150);
             clienteIdLabel.Name = "clienteIdLabel";
-            clienteIdLabel.Size = new System.Drawing.Size(54, 13);
+            clienteIdLabel.Size = new System.Drawing.Size(65, 20);
             clienteIdLabel.TabIndex = 3;
-            clienteIdLabel.Text = "Cliente Id:";
+            clienteIdLabel.Text = "Cliente:";
             // 
             // fechaLabel
             // 
             fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(50, 76);
+            fechaLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            fechaLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            fechaLabel.Location = new System.Drawing.Point(13, 117);
             fechaLabel.Name = "fechaLabel";
-            fechaLabel.Size = new System.Drawing.Size(40, 13);
+            fechaLabel.Size = new System.Drawing.Size(59, 20);
             fechaLabel.TabIndex = 5;
             fechaLabel.Text = "Fecha:";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(50, 49);
+            idLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            idLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            idLabel.Location = new System.Drawing.Point(13, 84);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(28, 20);
             idLabel.TabIndex = 7;
             idLabel.Text = "Id:";
             // 
             // impuestoLabel
             // 
             impuestoLabel.AutoSize = true;
-            impuestoLabel.Location = new System.Drawing.Point(427, 445);
+            impuestoLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            impuestoLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            impuestoLabel.Location = new System.Drawing.Point(393, 371);
             impuestoLabel.Name = "impuestoLabel";
-            impuestoLabel.Size = new System.Drawing.Size(53, 13);
+            impuestoLabel.Size = new System.Drawing.Size(81, 20);
             impuestoLabel.TabIndex = 9;
             impuestoLabel.Text = "Impuesto:";
             // 
             // subtotalLabel
             // 
             subtotalLabel.AutoSize = true;
-            subtotalLabel.Location = new System.Drawing.Point(427, 419);
+            subtotalLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            subtotalLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            subtotalLabel.Location = new System.Drawing.Point(393, 341);
             subtotalLabel.Name = "subtotalLabel";
-            subtotalLabel.Size = new System.Drawing.Size(49, 13);
+            subtotalLabel.Size = new System.Drawing.Size(72, 20);
             subtotalLabel.TabIndex = 11;
             subtotalLabel.Text = "Subtotal:";
             // 
             // totalLabel
             // 
             totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(427, 471);
+            totalLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            totalLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            totalLabel.Location = new System.Drawing.Point(393, 403);
             totalLabel.Name = "totalLabel";
-            totalLabel.Size = new System.Drawing.Size(34, 13);
+            totalLabel.Size = new System.Drawing.Size(46, 20);
             totalLabel.TabIndex = 13;
             totalLabel.Text = "Total:";
             // 
@@ -181,7 +214,7 @@
             this.listaFacturasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaFacturasBindingNavigator.Name = "listaFacturasBindingNavigator";
             this.listaFacturasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaFacturasBindingNavigator.Size = new System.Drawing.Size(703, 25);
+            this.listaFacturasBindingNavigator.Size = new System.Drawing.Size(755, 25);
             this.listaFacturasBindingNavigator.TabIndex = 0;
             this.listaFacturasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -296,7 +329,7 @@
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listaFacturasBindingSource, "Activo", true));
             this.activoCheckBox.Enabled = false;
-            this.activoCheckBox.Location = new System.Drawing.Point(328, 44);
+            this.activoCheckBox.Location = new System.Drawing.Point(307, 80);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(18, 24);
             this.activoCheckBox.TabIndex = 2;
@@ -305,15 +338,15 @@
             // fechaDateTimePicker
             // 
             this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.listaFacturasBindingSource, "Fecha", true));
-            this.fechaDateTimePicker.Location = new System.Drawing.Point(110, 72);
+            this.fechaDateTimePicker.Location = new System.Drawing.Point(103, 116);
             this.fechaDateTimePicker.Name = "fechaDateTimePicker";
-            this.fechaDateTimePicker.Size = new System.Drawing.Size(236, 20);
+            this.fechaDateTimePicker.Size = new System.Drawing.Size(222, 20);
             this.fechaDateTimePicker.TabIndex = 6;
             // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaFacturasBindingSource, "Id", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "00000"));
-            this.idTextBox.Location = new System.Drawing.Point(110, 46);
+            this.idTextBox.Location = new System.Drawing.Point(103, 84);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
             this.idTextBox.Size = new System.Drawing.Size(107, 20);
@@ -322,30 +355,33 @@
             // impuestoTextBox
             // 
             this.impuestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaFacturasBindingSource, "Impuesto", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
-            this.impuestoTextBox.Location = new System.Drawing.Point(487, 442);
+            this.impuestoTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.impuestoTextBox.Location = new System.Drawing.Point(486, 371);
             this.impuestoTextBox.Name = "impuestoTextBox";
             this.impuestoTextBox.ReadOnly = true;
-            this.impuestoTextBox.Size = new System.Drawing.Size(200, 20);
+            this.impuestoTextBox.Size = new System.Drawing.Size(200, 23);
             this.impuestoTextBox.TabIndex = 10;
             this.impuestoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // subtotalTextBox
             // 
             this.subtotalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaFacturasBindingSource, "Subtotal", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
-            this.subtotalTextBox.Location = new System.Drawing.Point(487, 416);
+            this.subtotalTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtotalTextBox.Location = new System.Drawing.Point(486, 341);
             this.subtotalTextBox.Name = "subtotalTextBox";
             this.subtotalTextBox.ReadOnly = true;
-            this.subtotalTextBox.Size = new System.Drawing.Size(200, 20);
+            this.subtotalTextBox.Size = new System.Drawing.Size(200, 23);
             this.subtotalTextBox.TabIndex = 12;
             this.subtotalTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // totalTextBox
             // 
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaFacturasBindingSource, "Total", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
-            this.totalTextBox.Location = new System.Drawing.Point(487, 468);
+            this.totalTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalTextBox.Location = new System.Drawing.Point(486, 400);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.ReadOnly = true;
-            this.totalTextBox.Size = new System.Drawing.Size(200, 20);
+            this.totalTextBox.Size = new System.Drawing.Size(200, 23);
             this.totalTextBox.TabIndex = 14;
             this.totalTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -364,9 +400,9 @@
             this.clienteIdComboBox.DisplayMember = "Nombre";
             this.clienteIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.clienteIdComboBox.FormattingEnabled = true;
-            this.clienteIdComboBox.Location = new System.Drawing.Point(110, 101);
+            this.clienteIdComboBox.Location = new System.Drawing.Point(103, 149);
             this.clienteIdComboBox.Name = "clienteIdComboBox";
-            this.clienteIdComboBox.Size = new System.Drawing.Size(236, 21);
+            this.clienteIdComboBox.Size = new System.Drawing.Size(222, 21);
             this.clienteIdComboBox.TabIndex = 15;
             this.clienteIdComboBox.ValueMember = "Id";
             // 
@@ -386,9 +422,9 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.facturaDetalleDataGridView.DataSource = this.facturaDetalleBindingSource;
-            this.facturaDetalleDataGridView.Location = new System.Drawing.Point(50, 139);
+            this.facturaDetalleDataGridView.Location = new System.Drawing.Point(393, 153);
             this.facturaDetalleDataGridView.Name = "facturaDetalleDataGridView";
-            this.facturaDetalleDataGridView.Size = new System.Drawing.Size(637, 267);
+            this.facturaDetalleDataGridView.Size = new System.Drawing.Size(547, 144);
             this.facturaDetalleDataGridView.TabIndex = 15;
             this.facturaDetalleDataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.facturaDetalleDataGridView_CellEndEdit);
             this.facturaDetalleDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.facturaDetalleDataGridView_DataError);
@@ -423,58 +459,188 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Total";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(531, 84);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 49);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(612, 84);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 49);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(567, 34);
+            this.label1.Location = new System.Drawing.Point(665, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 24);
             this.label1.TabIndex = 18;
             this.label1.Text = "ANULADO";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.panel1.Controls.Add(this.BtnCancelar);
+            this.panel1.Controls.Add(this.BtnGuardar);
+            this.panel1.Controls.Add(this.BtnBorrar);
+            this.panel1.Controls.Add(this.BtnAgregar);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(755, 59);
+            this.panel1.TabIndex = 19;
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Image = global::Win.Supermercado.Properties.Resources.cancel_77947;
+            this.BtnCancelar.Location = new System.Drawing.Point(206, 8);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(45, 41);
+            this.BtnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnCancelar.TabIndex = 7;
+            this.BtnCancelar.TabStop = false;
+            this.BtnCancelar.Visible = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Image = global::Win.Supermercado.Properties.Resources._1486485555_188backup_disk_data_data_storage_floppy_save_81149;
+            this.BtnGuardar.Location = new System.Drawing.Point(141, 8);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(45, 41);
+            this.BtnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnGuardar.TabIndex = 6;
+            this.BtnGuardar.TabStop = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.Image = global::Win.Supermercado.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
+            this.BtnBorrar.Location = new System.Drawing.Point(75, 8);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(45, 41);
+            this.BtnBorrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnBorrar.TabIndex = 5;
+            this.BtnBorrar.TabStop = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Image = global::Win.Supermercado.Properties.Resources._1486485586_add_document_contract_agreement_notic_file_plus_81158;
+            this.BtnAgregar.Location = new System.Drawing.Point(8, 8);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(45, 41);
+            this.BtnAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnAgregar.TabIndex = 4;
+            this.BtnAgregar.TabStop = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Win.Supermercado.Properties.Resources.Cartsubstract_icon_icons_com_51187;
+            this.pictureBox2.Location = new System.Drawing.Point(172, 257);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 81);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 26;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.Cartadd_icon_icons1;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 257);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(95, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Olive;
+            this.label3.Location = new System.Drawing.Point(118, 36);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 20);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Datos ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(447, 116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Detalle de Venta";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Olive;
+            this.label6.Location = new System.Drawing.Point(87, 215);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 20);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Agregar Productos";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(68)))), ((int)(((byte)(90)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.idTextBox);
+            this.panel2.Controls.Add(this.fechaDateTimePicker);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(idLabel);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.activoCheckBox);
+            this.panel2.Controls.Add(this.clienteIdComboBox);
+            this.panel2.Controls.Add(fechaLabel);
+            this.panel2.Controls.Add(clienteIdLabel);
+            this.panel2.Controls.Add(activoLabel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 84);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(342, 345);
+            this.panel2.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.Location = new System.Drawing.Point(51, 345);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Agregar";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(189, 345);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 20);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Quitar";
+            // 
             // FormFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 528);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(83)))), ((int)(((byte)(109)))));
+            this.ClientSize = new System.Drawing.Size(755, 429);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.facturaDetalleDataGridView);
-            this.Controls.Add(this.clienteIdComboBox);
-            this.Controls.Add(activoLabel);
-            this.Controls.Add(this.activoCheckBox);
-            this.Controls.Add(clienteIdLabel);
-            this.Controls.Add(fechaLabel);
-            this.Controls.Add(this.fechaDateTimePicker);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
             this.Controls.Add(impuestoLabel);
             this.Controls.Add(this.impuestoTextBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(subtotalLabel);
             this.Controls.Add(this.subtotalTextBox);
             this.Controls.Add(totalLabel);
@@ -490,6 +656,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaProductosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturaDetalleDataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,12 +698,23 @@
         private System.Windows.Forms.ComboBox clienteIdComboBox;
         private System.Windows.Forms.BindingSource facturaDetalleBindingSource;
         private System.Windows.Forms.DataGridView facturaDetalleDataGridView;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox BtnCancelar;
+        private System.Windows.Forms.PictureBox BtnGuardar;
+        private System.Windows.Forms.PictureBox BtnBorrar;
+        private System.Windows.Forms.PictureBox BtnAgregar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

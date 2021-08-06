@@ -93,9 +93,49 @@ namespace Win.Supermercado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1487716857_user_81635 {
+            get {
+                object obj = ResourceManager.GetObject("1487716857-user_81635", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_77947 {
             get {
                 object obj = ResourceManager.GetObject("cancel_77947", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cartadd_icon_icons_com_51193 {
+            get {
+                object obj = ResourceManager.GetObject("Cartadd_icon-icons.com_51193", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cartadd_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("Cartadd_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cartsubstract_icon_icons_com_51187 {
+            get {
+                object obj = ResourceManager.GetObject("Cartsubstract_icon-icons.com_51187", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +356,26 @@ namespace Win.Supermercado.Properties {
         internal static System.Drawing.Bitmap venta1 {
             get {
                 object obj = ResourceManager.GetObject("venta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wp3152211 {
+            get {
+                object obj = ResourceManager.GetObject("wp3152211", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wp31522111 {
+            get {
+                object obj = ResourceManager.GetObject("wp31522111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

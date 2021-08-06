@@ -21,8 +21,14 @@ namespace BL.Supermercado
             var usuarioAdmin2 = new Usuario();
             usuarioAdmin2.Nombre = "Admin";
             usuarioAdmin2.Contrasena = "5678";
-            usuarioAdmin2.TipoUsuario = "Ventas";
+            usuarioAdmin2.TipoUsuario = "Usuarios Cajas";
             context.Usuarios.Add(usuarioAdmin2);
+
+            var usuarioAdmin3 = new Usuario();
+            usuarioAdmin3.Nombre = "Admin";
+            usuarioAdmin3.Contrasena = "5678";
+            usuarioAdmin3.TipoUsuario = "Usuarios Ventas";
+            context.Usuarios.Add(usuarioAdmin3);
 
             var cat1 = new Categoria();
             cat1.Descripcion = "Carnes y Embutidos";

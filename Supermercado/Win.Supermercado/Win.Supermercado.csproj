@@ -140,6 +140,12 @@
     <Compile Include="FrmUsuarios.Designer.cs">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWelcome.Designer.cs">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarios.resx">
       <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWelcome.resx">
+      <DependentUpon>FrmWelcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrrmMenu.resx">
       <DependentUpon>FrrmMenu.cs</DependentUpon>
@@ -333,6 +342,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user_icon-icons.com_66546.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp3152211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487716857-user_81635.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp3152211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartadd_icon-icons.com_51193.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartadd_icon-icons.com_511931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartsubstract_icon-icons.com_51187.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

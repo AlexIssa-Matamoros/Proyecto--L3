@@ -20,7 +20,7 @@ namespace Win.Supermercado
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMenu());
+            Application.Run(new FrrmMenu());
         }
 
         public static byte[] imageToByteArray(Image imageIn)

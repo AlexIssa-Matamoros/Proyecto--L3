@@ -291,5 +291,28 @@ namespace Win.Supermercado
         {
 
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Buscar...")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = System.Drawing.Color.LightGray;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void FrmProductos_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Buscar...";
+                textBox1.ForeColor = System.Drawing.Color.DimGray;
+            }
+        }
     }
 }

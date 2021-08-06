@@ -23,6 +23,7 @@ namespace Win.Supermercado
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             Botones.Controls.Add(leftBorderBtn);
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         //
@@ -172,7 +173,7 @@ namespace Win.Supermercado
         private void button4_Click(object sender, EventArgs e)
         {
             /// codigos de mostrar cada formulario
-            if(MessageBox.Show("¿Esta segurp de cerrar sesion?", "Advertencia",
+            if(MessageBox.Show("¿Esta seguro de cerrar sesion?", "Advertencia",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             this.Close();
             login();
@@ -245,7 +246,9 @@ namespace Win.Supermercado
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("¿Esta seguro de Salir?", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -279,6 +282,7 @@ namespace Win.Supermercado
             if (Program.UsuarioLogueado != null)
             {
                 lbluser.Text = Program.UsuarioLogueado.Nombre;
+                lblTipo.Text = Program.UsuarioLogueado.TipoUsuario;
             }
 
             if (Program.UsuarioLogueado.TipoUsuario == "Usuarios Cajas")
@@ -300,6 +304,7 @@ namespace Win.Supermercado
                 //agregar reporte de clientes
                 btnFacturas.Visible = false; //fac
                 btnSeguridad.Visible = true; //usu
+                btnReportes.Visible = false;
                 button1.Visible = false; //re-pro
                 button2.Visible = false; //-re-fac
                 button3.Visible = false; //ad usuario
@@ -318,7 +323,8 @@ namespace Win.Supermercado
 
         private void FrrmMenu_Load(object sender, EventArgs e)
         {
-  
+            var Login = new FrmLogin();
+            Login.ShowDialog();
             DatosUsuario();
         }
 

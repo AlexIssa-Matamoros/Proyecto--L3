@@ -38,8 +38,9 @@ namespace Win.Supermercado
             if (usuarioDB != null)
             {
                 Program.UsuarioLogueado = usuarioDB;
-
-                this.Close();
+                FrmWelcome Bienvenido = new FrmWelcome();
+                Bienvenido.ShowDialog();
+                this.Hide();
             }
             else
             {
@@ -62,12 +63,22 @@ namespace Win.Supermercado
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
-
+            if (txtUsuario.Text == "USUARIO")
+            {
+                txtUsuario.Text = "";
+                txtUsuario.ForeColor = System.Drawing.Color.LightGray;
+            }
         }
 
         private void txtContra_Enter(object sender, EventArgs e)
         {
-            txtContra.UseSystemPasswordChar = true;
+            if (txtContra.Text == "CONTRASEÑA")
+            {
+                txtContra.Text = "";
+                txtContra.ForeColor = System.Drawing.Color.LightGray;
+                txtContra.UseSystemPasswordChar = true;
+            }
+            
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
@@ -90,6 +101,25 @@ namespace Win.Supermercado
                && !string.IsNullOrEmpty(txtContra.Text))
             {
                 button1.PerformClick();
+            }
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "")
+            {
+                txtUsuario.Text = "USUARIO";
+                txtUsuario.ForeColor = System.Drawing.Color.DimGray;
+            }
+        }
+
+        private void txtContra_Leave(object sender, EventArgs e)
+        {
+            if (txtContra.Text == "")
+            {
+                txtContra.Text = "CONTRASEÑA";
+                txtContra.ForeColor = System.Drawing.Color.DimGray;
+                txtContra.UseSystemPasswordChar = false;
             }
         }
     }

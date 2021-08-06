@@ -43,28 +43,31 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtUsuario.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txtUsuario.Location = new System.Drawing.Point(349, 68);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(177, 20);
             this.txtUsuario.TabIndex = 2;
+            this.txtUsuario.Text = "USUARIO";
             this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // txtContra
             // 
             this.txtContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContra.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtContra.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txtContra.Location = new System.Drawing.Point(349, 109);
             this.txtContra.Name = "txtContra";
-            this.txtContra.PasswordChar = '*';
             this.txtContra.Size = new System.Drawing.Size(177, 20);
             this.txtContra.TabIndex = 3;
+            this.txtContra.Text = "CONTRASEÑA";
             this.txtContra.TextChanged += new System.EventHandler(this.txtContra_TextChanged);
             this.txtContra.Enter += new System.EventHandler(this.txtContra_Enter);
             this.txtContra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContra_KeyPress);
+            this.txtContra.Leave += new System.EventHandler(this.txtContra_Leave);
             // 
             // button1
             // 

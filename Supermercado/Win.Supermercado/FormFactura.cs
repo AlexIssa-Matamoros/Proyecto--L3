@@ -50,6 +50,7 @@ namespace Win.Supermercado
             bindingNavigatorAddNewItem.Enabled = valor;
             bindingNavigatorDeleteItem.Enabled = valor;
             toolStripButtonCancelar.Visible = !valor;
+            BtnCancelar.Visible = !valor;
         }
 
         private void listaFacturasBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -79,21 +80,12 @@ namespace Win.Supermercado
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var factura = (Factura)listaFacturasBindingSource.Current;
-
-            _facturaBL.AgregarFacturaDetalle(factura);
-
-            DeshabilitarHabilitarBotones(false);
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var factura = (Factura)listaFacturasBindingSource.Current;
-            var facturaDetalle = (FacturaDetalle)facturaDetalleBindingSource.Current;
-
-            _facturaBL.RemoverFacturaDetalle(factura, facturaDetalle);
-
-            DeshabilitarHabilitarBotones(false);
+            
         }
 
         private void facturaDetalleDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -148,6 +140,71 @@ namespace Win.Supermercado
             {
                 label1.Visible = false;
             }
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            _facturaBL.AgregarFactura();
+            listaFacturasBindingSource.MoveLast();
+
+            DeshabilitarHabilitarBotones(false);
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (idTextBox.Text != "")
+            {
+                var resultado = MessageBox.Show("Desea anular esta factura?", "Anular", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Anular(id);
+                }
+            }
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            listaFacturasBindingSource.EndEdit();
+
+            var factura = (Factura)listaFacturasBindingSource.Current;
+            var resultado = _facturaBL.GuardarFactura(factura);
+
+            if (resultado.Exitoso == true)
+            {
+                listaFacturasBindingSource.ResetBindings(false);
+                DeshabilitarHabilitarBotones(true);
+                MessageBox.Show("Factura Guardada");
+            }
+            else
+            {
+                MessageBox.Show(resultado.Mensaje);
+            }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            DeshabilitarHabilitarBotones(true);
+            _facturaBL.CancelarCambios();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var factura = (Factura)listaFacturasBindingSource.Current;
+
+            _facturaBL.AgregarFacturaDetalle(factura);
+
+            DeshabilitarHabilitarBotones(false);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            var factura = (Factura)listaFacturasBindingSource.Current;
+            var facturaDetalle = (FacturaDetalle)facturaDetalleBindingSource.Current;
+
+            _facturaBL.RemoverFacturaDetalle(factura, facturaDetalle);
+
+            DeshabilitarHabilitarBotones(false);
         }
     }
 }

@@ -118,56 +118,83 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pagos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pagos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1487716857-user_81635" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1487716857-user_81635.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="empleados" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\empleados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1486485555-188backup-disk-data-data-storage-floppy-save_81149" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486485555-188backup-disk-data-data-storage-floppy-save_81149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="editar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_icon-icons.com_66546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_icon-icons.com_66546.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="producto1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\producto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cybersecurity-lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cybersecurity-lock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo, Opcion 2 blanco(PNG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo, Opcion 2 blanco(PNG).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icono cerrar FN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono cerrar FN1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="editar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono Maximizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono Maximizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pagos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pagos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wp31522111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp3152211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cybersecurity-lock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cybersecurity-lock1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="empleados1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\empleados1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="data-analysis_icon-icons.com_52842" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\data-analysis_icon-icons.com_52842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1486485586-add-document-contract-agreement-notic-file-plus_81158" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1486485586-add-document-contract-agreement-notic-file-plus_81158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cartadd_icon-icons1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cartadd_icon-icons.com_511931.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel_77947" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel_77947.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reportes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486485555-188backup-disk-data-data-storage-floppy-save_81149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485555-188backup-disk-data-data-storage-floppy-save_81149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wp3152211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp3152211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icono cerrar FN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono cerrar FN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icono Maximizar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono Maximizar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cartadd_icon-icons.com_51193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cartadd_icon-icons.com_51193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1486485586-add-document-contract-agreement-notic-file-plus_81158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1486485586-add-document-contract-agreement-notic-file-plus_81158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icono Minimizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icono Minimizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo, Opcion 2 blanco(PNG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo, Opcion 2 blanco(PNG).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icono Maximizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icono Maximizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,25 +202,16 @@
   <data name="clientes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clientes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cybersecurity-lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cybersecurity-lock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="empleados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empleados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cybersecurity-lock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cybersecurity-lock1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="venta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\venta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="data-analysis_icon-icons.com_52842" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\data-analysis_icon-icons.com_52842.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="producto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\producto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reportes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reportes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icono cerrar FN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icono cerrar FN1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user_icon-icons.com_66546" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_icon-icons.com_66546.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Cartsubstract_icon-icons.com_51187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cartsubstract_icon-icons.com_51187.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
