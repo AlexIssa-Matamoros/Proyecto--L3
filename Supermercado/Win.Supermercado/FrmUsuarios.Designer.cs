@@ -53,11 +53,19 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.listaUsuariosDataGridView = new System.Windows.Forms.DataGridView();
+            this.tipoUsuarioComboBox = new System.Windows.Forms.ComboBox();
+            this.PanelOpc = new System.Windows.Forms.Panel();
+            this.PanelMant = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BtnCancelar = new System.Windows.Forms.PictureBox();
+            this.BtnGuardar = new System.Windows.Forms.PictureBox();
+            this.BtnBorrar = new System.Windows.Forms.PictureBox();
+            this.BtnAgregar = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoUsuarioComboBox = new System.Windows.Forms.ComboBox();
             contrasenaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
@@ -66,41 +74,55 @@
             this.listaUsuariosBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosDataGridView)).BeginInit();
+            this.PanelOpc.SuspendLayout();
+            this.PanelMant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).BeginInit();
             this.SuspendLayout();
             // 
             // contrasenaLabel
             // 
             contrasenaLabel.AutoSize = true;
-            contrasenaLabel.Location = new System.Drawing.Point(26, 109);
+            contrasenaLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            contrasenaLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            contrasenaLabel.Location = new System.Drawing.Point(12, 136);
             contrasenaLabel.Name = "contrasenaLabel";
-            contrasenaLabel.Size = new System.Drawing.Size(64, 13);
+            contrasenaLabel.Size = new System.Drawing.Size(99, 20);
             contrasenaLabel.TabIndex = 1;
             contrasenaLabel.Text = "Contrasena:";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(26, 57);
+            idLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            idLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            idLabel.Location = new System.Drawing.Point(11, 84);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(28, 20);
             idLabel.TabIndex = 3;
             idLabel.Text = "Id:";
             // 
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(26, 83);
+            nombreLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            nombreLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            nombreLabel.Location = new System.Drawing.Point(12, 110);
             nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(47, 13);
+            nombreLabel.Size = new System.Drawing.Size(72, 20);
             nombreLabel.TabIndex = 5;
             nombreLabel.Text = "Nombre:";
             // 
             // tipoUsuarioLabel
             // 
             tipoUsuarioLabel.AutoSize = true;
-            tipoUsuarioLabel.Location = new System.Drawing.Point(26, 135);
+            tipoUsuarioLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            tipoUsuarioLabel.ForeColor = System.Drawing.Color.Gainsboro;
+            tipoUsuarioLabel.Location = new System.Drawing.Point(11, 164);
             tipoUsuarioLabel.Name = "tipoUsuarioLabel";
-            tipoUsuarioLabel.Size = new System.Drawing.Size(70, 13);
+            tipoUsuarioLabel.Size = new System.Drawing.Size(99, 20);
             tipoUsuarioLabel.TabIndex = 9;
             tipoUsuarioLabel.Text = "Tipo Usuario:";
             // 
@@ -131,9 +153,10 @@
             this.listaUsuariosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaUsuariosBindingNavigator.Name = "listaUsuariosBindingNavigator";
             this.listaUsuariosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaUsuariosBindingNavigator.Size = new System.Drawing.Size(639, 25);
+            this.listaUsuariosBindingNavigator.Size = new System.Drawing.Size(756, 25);
             this.listaUsuariosBindingNavigator.TabIndex = 0;
             this.listaUsuariosBindingNavigator.Text = "bindingNavigator1";
+            this.listaUsuariosBindingNavigator.Visible = false;
             // 
             // listaUsuariosBindingSource
             // 
@@ -249,26 +272,30 @@
             // contrasenaTextBox
             // 
             this.contrasenaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaUsuariosBindingSource, "Contrasena", true));
-            this.contrasenaTextBox.Location = new System.Drawing.Point(102, 106);
+            this.contrasenaTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contrasenaTextBox.Location = new System.Drawing.Point(129, 133);
             this.contrasenaTextBox.Name = "contrasenaTextBox";
-            this.contrasenaTextBox.Size = new System.Drawing.Size(162, 20);
+            this.contrasenaTextBox.Size = new System.Drawing.Size(172, 23);
             this.contrasenaTextBox.TabIndex = 2;
             this.contrasenaTextBox.Enter += new System.EventHandler(this.contrasenaTextBox_Enter);
             // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaUsuariosBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(102, 54);
+            this.idTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idTextBox.Location = new System.Drawing.Point(129, 81);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(162, 20);
+            this.idTextBox.ReadOnly = true;
+            this.idTextBox.Size = new System.Drawing.Size(172, 23);
             this.idTextBox.TabIndex = 4;
             // 
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaUsuariosBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(102, 80);
+            this.nombreTextBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreTextBox.Location = new System.Drawing.Point(129, 107);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(162, 20);
+            this.nombreTextBox.Size = new System.Drawing.Size(172, 23);
             this.nombreTextBox.TabIndex = 6;
             // 
             // listaUsuariosDataGridView
@@ -283,11 +310,124 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.listaUsuariosDataGridView.DataSource = this.listaUsuariosBindingSource;
-            this.listaUsuariosDataGridView.Location = new System.Drawing.Point(297, 54);
+            this.listaUsuariosDataGridView.Location = new System.Drawing.Point(356, 140);
             this.listaUsuariosDataGridView.Name = "listaUsuariosDataGridView";
             this.listaUsuariosDataGridView.ReadOnly = true;
-            this.listaUsuariosDataGridView.Size = new System.Drawing.Size(297, 99);
+            this.listaUsuariosDataGridView.Size = new System.Drawing.Size(388, 227);
             this.listaUsuariosDataGridView.TabIndex = 9;
+            // 
+            // tipoUsuarioComboBox
+            // 
+            this.tipoUsuarioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.listaUsuariosBindingSource, "TipoUsuario", true));
+            this.tipoUsuarioComboBox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipoUsuarioComboBox.FormattingEnabled = true;
+            this.tipoUsuarioComboBox.Items.AddRange(new object[] {
+            "Administradores",
+            "Usuarios Cajas",
+            "Usuarios Ventas"});
+            this.tipoUsuarioComboBox.Location = new System.Drawing.Point(129, 159);
+            this.tipoUsuarioComboBox.Name = "tipoUsuarioComboBox";
+            this.tipoUsuarioComboBox.Size = new System.Drawing.Size(172, 25);
+            this.tipoUsuarioComboBox.TabIndex = 10;
+            // 
+            // PanelOpc
+            // 
+            this.PanelOpc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.PanelOpc.Controls.Add(this.BtnCancelar);
+            this.PanelOpc.Controls.Add(this.BtnGuardar);
+            this.PanelOpc.Controls.Add(this.BtnBorrar);
+            this.PanelOpc.Controls.Add(this.BtnAgregar);
+            this.PanelOpc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelOpc.Location = new System.Drawing.Point(0, 0);
+            this.PanelOpc.Name = "PanelOpc";
+            this.PanelOpc.Size = new System.Drawing.Size(756, 59);
+            this.PanelOpc.TabIndex = 11;
+            // 
+            // PanelMant
+            // 
+            this.PanelMant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(68)))), ((int)(((byte)(90)))));
+            this.PanelMant.Controls.Add(this.label3);
+            this.PanelMant.Controls.Add(this.contrasenaTextBox);
+            this.PanelMant.Controls.Add(this.nombreTextBox);
+            this.PanelMant.Controls.Add(tipoUsuarioLabel);
+            this.PanelMant.Controls.Add(nombreLabel);
+            this.PanelMant.Controls.Add(this.tipoUsuarioComboBox);
+            this.PanelMant.Controls.Add(this.idTextBox);
+            this.PanelMant.Controls.Add(idLabel);
+            this.PanelMant.Controls.Add(contrasenaLabel);
+            this.PanelMant.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMant.Location = new System.Drawing.Point(0, 59);
+            this.PanelMant.Name = "PanelMant";
+            this.PanelMant.Size = new System.Drawing.Size(333, 370);
+            this.PanelMant.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Olive;
+            this.label3.Location = new System.Drawing.Point(41, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(208, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Mantenimiento de Usuarios";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(352, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 20);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Listado de Usuarios";
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Image = global::Win.Supermercado.Properties.Resources.cancel_77947;
+            this.BtnCancelar.Location = new System.Drawing.Point(213, 10);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(45, 41);
+            this.BtnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnCancelar.TabIndex = 16;
+            this.BtnCancelar.TabStop = false;
+            this.BtnCancelar.Visible = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Image = global::Win.Supermercado.Properties.Resources._1486485555_188backup_disk_data_data_storage_floppy_save_81149;
+            this.BtnGuardar.Location = new System.Drawing.Point(148, 10);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(45, 41);
+            this.BtnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnGuardar.TabIndex = 15;
+            this.BtnGuardar.TabStop = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.Image = global::Win.Supermercado.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
+            this.BtnBorrar.Location = new System.Drawing.Point(82, 10);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(45, 41);
+            this.BtnBorrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnBorrar.TabIndex = 14;
+            this.BtnBorrar.TabStop = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Image = global::Win.Supermercado.Properties.Resources._1486485586_add_document_contract_agreement_notic_file_plus_81158;
+            this.BtnAgregar.Location = new System.Drawing.Point(15, 10);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(45, 41);
+            this.BtnAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnAgregar.TabIndex = 13;
+            this.BtnAgregar.TabStop = false;
+            this.BtnAgregar.Tag = "";
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -309,6 +449,7 @@
             this.dataGridViewTextBoxColumn3.HeaderText = "Contrasena";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.ToolTipText = "*";
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -317,33 +458,16 @@
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // tipoUsuarioComboBox
-            // 
-            this.tipoUsuarioComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.listaUsuariosBindingSource, "TipoUsuario", true));
-            this.tipoUsuarioComboBox.FormattingEnabled = true;
-            this.tipoUsuarioComboBox.Items.AddRange(new object[] {
-            "Administradores",
-            "Usuarios Cajas",
-            "Usuarios Ventas"});
-            this.tipoUsuarioComboBox.Location = new System.Drawing.Point(102, 132);
-            this.tipoUsuarioComboBox.Name = "tipoUsuarioComboBox";
-            this.tipoUsuarioComboBox.Size = new System.Drawing.Size(162, 21);
-            this.tipoUsuarioComboBox.TabIndex = 10;
-            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 212);
-            this.Controls.Add(tipoUsuarioLabel);
-            this.Controls.Add(this.tipoUsuarioComboBox);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(83)))), ((int)(((byte)(109)))));
+            this.ClientSize = new System.Drawing.Size(756, 429);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.PanelMant);
+            this.Controls.Add(this.PanelOpc);
             this.Controls.Add(this.listaUsuariosDataGridView);
-            this.Controls.Add(contrasenaLabel);
-            this.Controls.Add(this.contrasenaTextBox);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
-            this.Controls.Add(nombreLabel);
-            this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.listaUsuariosBindingNavigator);
             this.Name = "FrmUsuarios";
             this.Text = "Usuarios";
@@ -352,6 +476,13 @@
             this.listaUsuariosBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosDataGridView)).EndInit();
+            this.PanelOpc.ResumeLayout(false);
+            this.PanelMant.ResumeLayout(false);
+            this.PanelMant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,11 +508,19 @@
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.DataGridView listaUsuariosDataGridView;
+        private System.Windows.Forms.ComboBox tipoUsuarioComboBox;
+        private System.Windows.Forms.ToolStripButton toolStripButtonCancelar;
+        private System.Windows.Forms.Panel PanelOpc;
+        private System.Windows.Forms.Panel PanelMant;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox BtnCancelar;
+        private System.Windows.Forms.PictureBox BtnGuardar;
+        private System.Windows.Forms.PictureBox BtnBorrar;
+        private System.Windows.Forms.PictureBox BtnAgregar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.ComboBox tipoUsuarioComboBox;
-        private System.Windows.Forms.ToolStripButton toolStripButtonCancelar;
     }
 }

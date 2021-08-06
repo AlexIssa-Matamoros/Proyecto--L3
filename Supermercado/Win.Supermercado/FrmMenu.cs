@@ -40,7 +40,7 @@ namespace Win.Supermercado
             //    rentasToolStripMenuItem.Visible = false;
             //    facturaToolStripMenuItem.Visible = false;
             //    usuariosToolStripMenuItem.Visible = false;
-            //    reporteDeVentasToolStripMenuItem.Visible = false;
+            //    reporteDeVentasToolStripMenuItem.Visible = true;
             //    reporteFacturasToolStripMenuItem.Visible = true;
             //    reporteProductosToolStripMenuItem.Visible = false;
             //    //reportedeclientes
@@ -51,7 +51,7 @@ namespace Win.Supermercado
             //    Application.Exit();
             //}
 
-    }
+        }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {

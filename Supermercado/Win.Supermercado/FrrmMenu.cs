@@ -172,6 +172,10 @@ namespace Win.Supermercado
         private void button4_Click(object sender, EventArgs e)
         {
             /// codigos de mostrar cada formulario
+            if(MessageBox.Show("¿Esta segurp de cerrar sesion?", "Advertencia",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            this.Close();
+            login();
             OcultarSubmenu();
         }
 
@@ -255,6 +259,56 @@ namespace Win.Supermercado
         private void button6_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void login()
+        {
+            var FrmLogin = new FrmLogin();
+            FrmLogin.ShowDialog();
+
+            
+        }
+
+        private void panelVentanaBTN_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void DatosUsuario()
+        {
+            if (Program.UsuarioLogueado != null)
+            {
+                lbluser.Text = Program.UsuarioLogueado.Nombre;
+            }
+
+
+            if (Program.UsuarioLogueado.TipoUsuario == "Usuarios caja")
+            {
+                btnProducto.Visible = false; //producto
+                btnClientes.Visible = false; //cliente
+
+                btnFacturas.Visible = true; //fac
+                btnSeguridad.Visible = false; //usu
+                button1.Visible = false; //re-pro
+                button2.Visible = true; //-re-fac
+            }
+
+        }
+
+        private void FrrmMenu_Load(object sender, EventArgs e)
+        {
+  
+            DatosUsuario();
+        }
+
+        private void cerrarCesion(object sender, FormClosedEventArgs e)
+        {
+            //limpiear txt
+        }
+
+        private void Botones_Paint(object sender, PaintEventArgs e)
+        {
+            DatosUsuario();
         }
     }
 }

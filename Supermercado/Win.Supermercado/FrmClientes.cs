@@ -34,6 +34,7 @@ namespace Win.Supermercado
             bindingNavigatorAddNewItem.Enabled = valor;
             bindingNavigatorDeleteItem.Enabled = valor;
             toolStripButtonCancelar.Visible = !valor;
+            BtnCancelar.Visible = !valor;
         }
 
         private void FrmClientes_Load(object sender, EventArgs e)
@@ -119,7 +120,65 @@ namespace Win.Supermercado
 
         private void BtnAgregar_Click(object sender, EventArgs e)
         {
+            _clientesBL.AgregarCliente();
+            listaClientesBindingSource.MoveLast();
 
+            DeshabilitarHabilitarBotones(false);
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (idTextBox.Text != "")
+            {
+                var resultado = MessageBox.Show("Desea eliminar este registro?", "Eliminar", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Eliminar(id);
+                }
+            }
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+
+            listaClientesBindingSource.EndEdit();
+            var cliente = (Cliente)listaClientesBindingSource.Current;
+
+            var resultado = _clientesBL.GuardarCliente(cliente);
+
+            if (resultado.Exitoso == true)
+            {
+                listaClientesBindingSource.ResetBindings(false);
+                DeshabilitarHabilitarBotones(true);
+                MessageBox.Show("Cliente guardado");
+            }
+            else
+            {
+                MessageBox.Show(resultado.Mensaje);
+            }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            _clientesBL.CancelarCambios();
+            DeshabilitarHabilitarBotones(true);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var buscar = textBox1.Text;
+
+            if (string.IsNullOrEmpty(buscar) == true)
+            {
+                listaClientesBindingSource.DataSource = _clientesBL.ObtenerClientes();
+            }
+            else
+            {
+                listaClientesBindingSource.DataSource = _clientesBL.ObtenerClientes(buscar);
+            }
+
+            listaClientesBindingSource.ResetBindings(false);
         }
     }
 }

@@ -51,21 +51,20 @@
             this.activoCheckBox = new System.Windows.Forms.CheckBox();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCancelar = new System.Windows.Forms.PictureBox();
+            this.BtnGuardar = new System.Windows.Forms.PictureBox();
+            this.BtnBorrar = new System.Windows.Forms.PictureBox();
+            this.BtnAgregar = new System.Windows.Forms.PictureBox();
             this.PanelMant = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.listaClientesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.BtnCancelar = new System.Windows.Forms.PictureBox();
-            this.BtnGuardar = new System.Windows.Forms.PictureBox();
-            this.BtnBorrar = new System.Windows.Forms.PictureBox();
-            this.BtnAgregar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             activoLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
@@ -73,13 +72,13 @@
             this.listaClientesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listaClientesBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
-            this.PanelMant.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaClientesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PanelMant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaClientesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // activoLabel
@@ -145,6 +144,7 @@
             this.listaClientesBindingNavigator.Size = new System.Drawing.Size(756, 25);
             this.listaClientesBindingNavigator.TabIndex = 0;
             this.listaClientesBindingNavigator.Text = "bindingNavigator1";
+            this.listaClientesBindingNavigator.Visible = false;
             // 
             // listaClientesBindingSource
             // 
@@ -282,22 +282,13 @@
             this.nombreTextBox.Size = new System.Drawing.Size(119, 20);
             this.nombreTextBox.TabIndex = 6;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(516, 101);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(542, 23);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
+            this.textBox1.Size = new System.Drawing.Size(191, 21);
             this.textBox1.TabIndex = 8;
             // 
             // panel1
@@ -310,10 +301,67 @@
             this.panel1.Controls.Add(this.BtnAgregar);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(756, 59);
             this.panel1.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.data_analysis_icon_icons_com_52842;
+            this.pictureBox1.Location = new System.Drawing.Point(491, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Image = global::Win.Supermercado.Properties.Resources.cancel_77947;
+            this.BtnCancelar.Location = new System.Drawing.Point(213, 11);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(45, 41);
+            this.BtnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnCancelar.TabIndex = 12;
+            this.BtnCancelar.TabStop = false;
+            this.BtnCancelar.Visible = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Image = global::Win.Supermercado.Properties.Resources._1486485555_188backup_disk_data_data_storage_floppy_save_81149;
+            this.BtnGuardar.Location = new System.Drawing.Point(148, 11);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(45, 41);
+            this.BtnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnGuardar.TabIndex = 11;
+            this.BtnGuardar.TabStop = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.Image = global::Win.Supermercado.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
+            this.BtnBorrar.Location = new System.Drawing.Point(82, 11);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(45, 41);
+            this.BtnBorrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnBorrar.TabIndex = 10;
+            this.BtnBorrar.TabStop = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.Image = global::Win.Supermercado.Properties.Resources._1486485586_add_document_contract_agreement_notic_file_plus_81158;
+            this.BtnAgregar.Location = new System.Drawing.Point(15, 11);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(45, 41);
+            this.BtnAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BtnAgregar.TabIndex = 9;
+            this.BtnAgregar.TabStop = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // PanelMant
             // 
@@ -326,10 +374,21 @@
             this.PanelMant.Controls.Add(activoLabel);
             this.PanelMant.Controls.Add(this.activoCheckBox);
             this.PanelMant.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelMant.Location = new System.Drawing.Point(0, 84);
+            this.PanelMant.Location = new System.Drawing.Point(0, 59);
             this.PanelMant.Name = "PanelMant";
-            this.PanelMant.Size = new System.Drawing.Size(236, 345);
+            this.PanelMant.Size = new System.Drawing.Size(236, 370);
             this.PanelMant.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Olive;
+            this.label3.Location = new System.Drawing.Point(11, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(206, 20);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Mantenimiento de Clientes";
             // 
             // listaClientesDataGridView
             // 
@@ -374,70 +433,6 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Listado deClientes";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Olive;
-            this.label3.Location = new System.Drawing.Point(11, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 20);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Mantenimiento de Clientes";
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.Image = global::Win.Supermercado.Properties.Resources.cancel_77947;
-            this.BtnCancelar.Location = new System.Drawing.Point(213, 11);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(45, 41);
-            this.BtnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnCancelar.TabIndex = 12;
-            this.BtnCancelar.TabStop = false;
-            this.BtnCancelar.Visible = false;
-            // 
-            // BtnGuardar
-            // 
-            this.BtnGuardar.Image = global::Win.Supermercado.Properties.Resources._1486485555_188backup_disk_data_data_storage_floppy_save_81149;
-            this.BtnGuardar.Location = new System.Drawing.Point(148, 11);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(45, 41);
-            this.BtnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnGuardar.TabIndex = 11;
-            this.BtnGuardar.TabStop = false;
-            // 
-            // BtnBorrar
-            // 
-            this.BtnBorrar.Image = global::Win.Supermercado.Properties.Resources._1486504830_delete_dustbin_empty_recycle_recycling_remove_trash_81361;
-            this.BtnBorrar.Location = new System.Drawing.Point(82, 11);
-            this.BtnBorrar.Name = "BtnBorrar";
-            this.BtnBorrar.Size = new System.Drawing.Size(45, 41);
-            this.BtnBorrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnBorrar.TabIndex = 10;
-            this.BtnBorrar.TabStop = false;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Image = global::Win.Supermercado.Properties.Resources._1486485586_add_document_contract_agreement_notic_file_plus_81158;
-            this.BtnAgregar.Location = new System.Drawing.Point(15, 11);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(45, 41);
-            this.BtnAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BtnAgregar.TabIndex = 9;
-            this.BtnAgregar.TabStop = false;
-            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.data_analysis_icon_icons_com_52842;
-            this.pictureBox1.Location = new System.Drawing.Point(491, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,7 +444,6 @@
             this.Controls.Add(this.PanelMant);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.listaClientesBindingNavigator);
-            this.Controls.Add(this.button1);
             this.Name = "FrmClientes";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.FrmClientes_Load);
@@ -459,14 +453,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.listaClientesBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.PanelMant.ResumeLayout(false);
-            this.PanelMant.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listaClientesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnCancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnGuardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnBorrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnAgregar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PanelMant.ResumeLayout(false);
+            this.PanelMant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listaClientesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,7 +486,6 @@
         private System.Windows.Forms.CheckBox activoCheckBox;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox nombreTextBox;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PanelMant;

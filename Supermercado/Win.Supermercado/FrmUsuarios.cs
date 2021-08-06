@@ -32,6 +32,7 @@ namespace Win.Supermercado
             bindingNavigatorAddNewItem.Enabled = valor;
             bindingNavigatorDeleteItem.Enabled = valor;
             toolStripButtonCancelar.Visible = !valor;
+            BtnCancelar.Visible = !valor;
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
@@ -97,6 +98,52 @@ namespace Win.Supermercado
         private void contrasenaTextBox_Enter(object sender, EventArgs e)
         {
             contrasenaTextBox.UseSystemPasswordChar = true;
+        }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            _usuariosBL.AgregarUsuario();
+            listaUsuariosBindingSource.MoveLast();
+
+            DeshabilitarHabilitarBotones(false);
+        }
+
+        private void BtnBorrar_Click(object sender, EventArgs e)
+        {
+            if (idTextBox.Text != "")
+            {
+                var resultado = MessageBox.Show("Desea eliminar este registro?", "Eliminar", MessageBoxButtons.YesNo);
+                if (resultado == DialogResult.Yes)
+                {
+                    var id = Convert.ToInt32(idTextBox.Text);
+                    Eliminar(id);
+                }
+            }
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            listaUsuariosBindingSource.EndEdit();
+            var usuario = (Usuario)listaUsuariosBindingSource.Current;
+
+            var resultado = _usuariosBL.GuardarUsuario(usuario);
+
+            if (resultado.Exitoso == true)
+            {
+                listaUsuariosBindingSource.ResetBindings(false);
+                DeshabilitarHabilitarBotones(true);
+                MessageBox.Show("Usuario guardado");
+            }
+            else
+            {
+                MessageBox.Show(resultado.Mensaje);
+            }
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+            _usuariosBL.CancelarCambios();
+            DeshabilitarHabilitarBotones(true);
         }
     }
 }
