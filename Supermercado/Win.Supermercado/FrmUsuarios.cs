@@ -19,6 +19,10 @@ namespace Win.Supermercado
             InitializeComponent();
             _usuariosBL = new SeguridadBL();
             listaUsuariosBindingSource.DataSource = _usuariosBL.ObtenerUsuarios();
+            this.ttmensaje.SetToolTip(this.BtnAgregar, "Agregar");
+            this.ttmensaje.SetToolTip(this.BtnBorrar, "Borrar");
+            this.ttmensaje.SetToolTip(this.BtnGuardar, "Guardar");
+            this.ttmensaje.SetToolTip(this.BtnCancelar, "Cancelar");
         }
 
         private void DeshabilitarHabilitarBotones(bool valor)
@@ -106,6 +110,7 @@ namespace Win.Supermercado
             listaUsuariosBindingSource.MoveLast();
 
             DeshabilitarHabilitarBotones(false);
+            
         }
 
         private void BtnBorrar_Click(object sender, EventArgs e)
@@ -158,6 +163,12 @@ namespace Win.Supermercado
                     e.Value = "Null";
             }
                     
+        }
+
+        private void FrmUsuarios_Load(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

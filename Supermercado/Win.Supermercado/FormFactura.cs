@@ -29,6 +29,15 @@ namespace Win.Supermercado
 
             _productosBL = new ProductosBL();
             listaProductosBindingSource.DataSource = _productosBL.ObtenerProductos();
+
+            /////////// mensajes
+            this.ttmensaje.SetToolTip(this.BtnAgregar, "Agregar");
+            this.ttmensaje.SetToolTip(this.BtnBorrar, "Borrar");
+            this.ttmensaje.SetToolTip(this.BtnGuardar, "Guardar");
+            this.ttmensaje.SetToolTip(this.BtnCancelar, "Cancelar");
+            this.ttmensaje.SetToolTip(this.pictureBox1, "Buscar");
+            this.ttmensaje.SetToolTip(this.pictureBox1, "Agregar Producto");
+            this.ttmensaje.SetToolTip(this.pictureBox2, "Eliminar Producto");
         }
 
         private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)

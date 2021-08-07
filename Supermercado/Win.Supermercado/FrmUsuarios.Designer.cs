@@ -66,6 +66,7 @@
             this.PanelMant = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
             contrasenaLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             nombreLabel = new System.Windows.Forms.Label();
@@ -460,6 +461,10 @@
             this.label2.TabIndex = 25;
             this.label2.Text = "Listado de Usuarios";
             // 
+            // ttmensaje
+            // 
+            this.ttmensaje.IsBalloon = true;
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,6 +478,7 @@
             this.Controls.Add(this.listaUsuariosBindingNavigator);
             this.Name = "FrmUsuarios";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listaUsuariosBindingNavigator)).EndInit();
             this.listaUsuariosBindingNavigator.ResumeLayout(false);
             this.listaUsuariosBindingNavigator.PerformLayout();
@@ -524,5 +530,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ToolTip ttmensaje;
     }
 }

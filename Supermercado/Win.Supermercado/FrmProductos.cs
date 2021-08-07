@@ -31,8 +31,15 @@ namespace Win.Supermercado
 
             _tipos = new TiposBL();
             listaTiposBindingSource.DataSource = _tipos.ObtenerTipos();
+            /////////// mensajes
+            this.ttmensaje.SetToolTip(this.BtnAgregar, "Agregar");
+            this.ttmensaje.SetToolTip(this.BtnBorrar, "Borrar");
+            this.ttmensaje.SetToolTip(this.BtnGuardar, "Guardar");
+            this.ttmensaje.SetToolTip(this.BtnCancelar, "Cancelar");
+            this.ttmensaje.SetToolTip(this.pictureBox1, "Buscar");
+            this.ttmensaje.SetToolTip(this.button1, "Agregar Foto");
+            this.ttmensaje.SetToolTip(this.button2, "Eliminar Foto");
 
-            
         }
 
         private void FrmProductos_Load(object sender, EventArgs e)

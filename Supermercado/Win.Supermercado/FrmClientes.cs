@@ -21,6 +21,14 @@ namespace Win.Supermercado
 
             _clientesBL = new ClientesBL();
             listaClientesBindingSource.DataSource = _clientesBL.ObtenerClientes();
+
+            /////////// mensajes
+            this.ttmensaje.SetToolTip(this.BtnAgregar, "Agregar");
+            this.ttmensaje.SetToolTip(this.BtnBorrar, "Borrar");
+            this.ttmensaje.SetToolTip(this.BtnGuardar, "Guardar");
+            this.ttmensaje.SetToolTip(this.BtnCancelar, "Cancelar");
+            this.ttmensaje.SetToolTip(this.pictureBox1, "Buscar");
+            
         }
 
         private void DeshabilitarHabilitarBotones(bool valor)
