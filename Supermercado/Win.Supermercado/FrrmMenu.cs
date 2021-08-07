@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,10 @@ namespace Win.Supermercado
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             Botones.Controls.Add(leftBorderBtn);
+            ///FORM
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
@@ -180,9 +185,6 @@ namespace Win.Supermercado
             OcultarSubmenu();
         }
 
-       
-
-
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
 
@@ -324,7 +326,7 @@ namespace Win.Supermercado
         private void FrrmMenu_Load(object sender, EventArgs e)
         {
             var Login = new FrmLogin();
-            Login.ShowDialog();
+            //Login.ShowDialog();
             DatosUsuario();
         }
 
@@ -336,6 +338,19 @@ namespace Win.Supermercado
         private void Botones_Paint(object sender, PaintEventArgs e)
         {
            
+        }
+
+        // Mover Formulario desde el panel
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int Param);
+
+        private void panelVentanaBTN_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

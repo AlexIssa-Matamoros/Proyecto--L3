@@ -145,5 +145,19 @@ namespace Win.Supermercado
             _usuariosBL.CancelarCambios();
             DeshabilitarHabilitarBotones(true);
         }
+
+        private void listaUsuariosDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e) 
+        {
+            if (e.ColumnIndex == 2)
+            {
+                if (e.Value != null)
+                {
+                    e.Value = new string('*', e.Value.ToString().Length);
+                }
+                else
+                    e.Value = "Null";
+            }
+                    
+        }
     }
 }

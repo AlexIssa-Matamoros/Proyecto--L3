@@ -37,10 +37,12 @@ namespace Win.Supermercado
 
             if (usuarioDB != null)
             {
+                this.Hide();
                 Program.UsuarioLogueado = usuarioDB;
                 FrmWelcome Bienvenido = new FrmWelcome();
                 Bienvenido.ShowDialog();
-                this.Hide();
+                FrrmMenu Menu = new FrrmMenu();
+                Menu.Show();
             }
             else
             {

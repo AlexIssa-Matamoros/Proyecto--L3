@@ -402,6 +402,7 @@
             this.panelVentanaBTN.Size = new System.Drawing.Size(772, 35);
             this.panelVentanaBTN.TabIndex = 3;
             this.panelVentanaBTN.Paint += new System.Windows.Forms.PaintEventHandler(this.panelVentanaBTN_Paint);
+            this.panelVentanaBTN.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelVentanaBTN_MouseDown);
             // 
             // button6
             // 
@@ -502,7 +503,6 @@
             this.Controls.Add(this.panelVentanaBTN);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Botones);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrrmMenu";

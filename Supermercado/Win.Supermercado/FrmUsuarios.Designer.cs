@@ -303,6 +303,7 @@
             this.listaUsuariosDataGridView.AllowUserToAddRows = false;
             this.listaUsuariosDataGridView.AllowUserToDeleteRows = false;
             this.listaUsuariosDataGridView.AutoGenerateColumns = false;
+            this.listaUsuariosDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(68)))), ((int)(((byte)(90)))));
             this.listaUsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaUsuariosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -315,6 +316,7 @@
             this.listaUsuariosDataGridView.ReadOnly = true;
             this.listaUsuariosDataGridView.Size = new System.Drawing.Size(388, 327);
             this.listaUsuariosDataGridView.TabIndex = 9;
+            this.listaUsuariosDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.listaUsuariosDataGridView_CellFormatting);
             // 
             // dataGridViewTextBoxColumn1
             // 
