@@ -29,6 +29,12 @@ namespace Win.Supermercado
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            /// Datos
+            this.ttmensaje.SetToolTip(this.lbluser, "Usuario");
+            this.ttmensaje.SetToolTip(this.lblTipo, "Tipo de Usuario");
+            this.ttmensaje.SetToolTip(this.button6, "Minimizar");
+            this.ttmensaje.SetToolTip(this.button5, "Maximizar");
+            this.ttmensaje.SetToolTip(this.buttonSalir, "Salir");
         }
 
         //
