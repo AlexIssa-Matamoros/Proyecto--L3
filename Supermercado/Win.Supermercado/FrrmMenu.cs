@@ -24,6 +24,7 @@ namespace Win.Supermercado
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             Botones.Controls.Add(leftBorderBtn);
+            this.DoubleBuffered = true;
             ///FORM
             this.Text = string.Empty;
             this.ControlBox = false;
@@ -111,6 +112,7 @@ namespace Win.Supermercado
 
         private void btnReportes_Click(object sender, EventArgs e)
         {
+            TituloFrmHijo.Text = "Reportes";
             ActivarBoton(sender, RGBColores.color4);
             MostrarSubMenus(PanelSubmenuReportes);
             PanelSubMenuSeguridad.Visible = false;
@@ -118,6 +120,7 @@ namespace Win.Supermercado
 
         private void btnSeguridad_Click(object sender, EventArgs e)
         {
+            TituloFrmHijo.Text = "Seguridad";
             ActivarBoton(sender, RGBColores.color4);
             MostrarSubMenus(PanelSubMenuSeguridad);
             PanelSubmenuReportes.Visible = false;
@@ -126,7 +129,8 @@ namespace Win.Supermercado
         private void Reiniciar()
         {
             DesactivarBoton();
-            iconodeFormHijo.Image = currentBtn.Image;
+
+            TituloFrmHijo.Text = "Inicio";
         }
 
         ////////////// Sub Menu /////////
@@ -186,8 +190,11 @@ namespace Win.Supermercado
             /// codigos de mostrar cada formulario
             if(MessageBox.Show("¿Esta seguro de cerrar sesion?", "Advertencia",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            this.Close();
-            login();
+            {
+                this.Close();
+                login();
+            }
+           
             OcultarSubmenu();
         }
 
@@ -230,7 +237,7 @@ namespace Win.Supermercado
         {
             DesactivarBoton();
             leftBorderBtn.Visible = false;
-           
+            this.iconodeFormHijo.Image = global::Win.Supermercado.Properties.Resources.venta2;
             TituloFrmHijo.Text = "Inicio";
         }
 
