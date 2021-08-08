@@ -170,5 +170,44 @@ namespace Win.Supermercado
             
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            var buscar = textBox1.Text;
+
+            if (string.IsNullOrEmpty(buscar) == true)
+            {
+                listaUsuariosBindingSource.DataSource = _usuariosBL.ObtenerUsuarios();
+            }
+            else
+            {
+                listaUsuariosBindingSource.DataSource = _usuariosBL.ObtenerUsuarios(buscar);
+            }
+
+            listaUsuariosBindingSource.ResetBindings(false);
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Buscar...")
+            {
+                textBox1.Text = "";
+                //textBox1.ForeColor = System.Drawing.Color.LightGray;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Buscar...";
+                //textBox1.ForeColor = System.Drawing.Color.LightGray;
+            }
+        }
     }
 }

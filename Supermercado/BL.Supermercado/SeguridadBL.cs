@@ -35,6 +35,17 @@ namespace BL.Supermercado
             }
         }
 
+        public BindingList<Usuario> ObtenerUsuarios(string buscar)
+        {
+            var query = _contexto.Usuarios
+                    .Where(p => p.Nombre.ToLower()
+                        .Contains(buscar.ToLower()) == true).ToList();
+
+            var resultado = new BindingList<Usuario>(query);
+            return resultado;
+        }
+
+
         public Resultado GuardarUsuario(Usuario usuario)
         {
             var resultado = Validar(usuario);
@@ -98,6 +109,8 @@ namespace BL.Supermercado
 
             return null;
         }
+
+        
     }
 
     public class Usuario

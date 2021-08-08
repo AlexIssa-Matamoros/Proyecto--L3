@@ -304,7 +304,7 @@ namespace Win.Supermercado
             if (textBox1.Text == "Buscar...")
             {
                 textBox1.Text = "";
-                textBox1.ForeColor = System.Drawing.Color.LightGray;
+                //textBox1.ForeColor = System.Drawing.Color.LightGray;
             }
         }
 
@@ -318,7 +318,7 @@ namespace Win.Supermercado
             if (textBox1.Text == "")
             {
                 textBox1.Text = "Buscar...";
-                textBox1.ForeColor = System.Drawing.Color.DimGray;
+                //textBox1.ForeColor = System.Drawing.Color.LightGray;
             }
         }
     }
