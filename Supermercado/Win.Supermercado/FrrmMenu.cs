@@ -306,23 +306,27 @@ namespace Win.Supermercado
                 btnClientes.Visible = false; //cliente
 
                 btnFacturas.Visible = true; //fac
+                btnReportes.Visible = true;
                 btnSeguridad.Visible = true; //usu
                 button1.Visible = false; //re-pro
                 button2.Visible = true; //-re-fac
                 button3.Visible = false; //ad us
+                button7.Visible = false; // report clientes
             }
 
             if (Program.UsuarioLogueado.TipoUsuario == "Usuarios Ventas")
             {
                 btnProducto.Visible = false; //producto
                 btnClientes.Visible = true; //cliente
-                //agregar reporte de clientes
+                button7.Visible = true;
                 btnFacturas.Visible = false; //fac
+                btnReportes.Visible = true;
                 btnSeguridad.Visible = true; //usu
-                btnReportes.Visible = false;
+                btnReportes.Visible = true;
                 button1.Visible = false; //re-pro
                 button2.Visible = false; //-re-fac
                 button3.Visible = false; //ad usuario
+                button7.Visible = true;
             }
 
             if (Program.UsuarioLogueado.TipoUsuario == "Administradores")
@@ -364,6 +368,13 @@ namespace Win.Supermercado
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            /// codigos de mostrar cada formulario
+            AbrirFormularioHijo(new FormReporteClientes());
+            OcultarSubmenu();
         }
     }
 }
