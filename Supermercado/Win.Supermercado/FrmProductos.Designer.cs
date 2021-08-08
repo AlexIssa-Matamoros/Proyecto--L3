@@ -466,9 +466,9 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(580, 17);
+            this.textBox1.Location = new System.Drawing.Point(554, 13);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 26);
+            this.textBox1.Size = new System.Drawing.Size(191, 26);
             this.textBox1.TabIndex = 18;
             this.textBox1.Text = "Buscar...";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -493,7 +493,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.data_analysis_icon_icons_com_52842;
-            this.pictureBox1.Location = new System.Drawing.Point(529, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(503, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(45, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
