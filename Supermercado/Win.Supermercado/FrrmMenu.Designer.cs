@@ -36,10 +36,6 @@
             this.PanelSubmenuReportes = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Logo = new System.Windows.Forms.Panel();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.lbluser = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TituloFrmHijo = new System.Windows.Forms.Label();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
@@ -58,21 +54,25 @@
             this.btnFacturas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProducto = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.botonInicio = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.botonInicio = new System.Windows.Forms.PictureBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lbluser = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.Panel();
             this.Botones.SuspendLayout();
             this.PanelSubMenuSeguridad.SuspendLayout();
             this.PanelSubmenuReportes.SuspendLayout();
-            this.Logo.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelVentanaBTN.SuspendLayout();
             this.PanelEscritorio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconodeFormHijo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.Logo.SuspendLayout();
             this.SuspendLayout();
             // 
             // Botones
@@ -100,7 +100,7 @@
             this.PanelSubMenuSeguridad.Controls.Add(this.button4);
             this.PanelSubMenuSeguridad.Controls.Add(this.button3);
             this.PanelSubMenuSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSubMenuSeguridad.Location = new System.Drawing.Point(0, 504);
+            this.PanelSubMenuSeguridad.Location = new System.Drawing.Point(0, 498);
             this.PanelSubMenuSeguridad.Name = "PanelSubMenuSeguridad";
             this.PanelSubMenuSeguridad.Size = new System.Drawing.Size(169, 103);
             this.PanelSubMenuSeguridad.TabIndex = 7;
@@ -143,7 +143,7 @@
             this.PanelSubmenuReportes.Controls.Add(this.button2);
             this.PanelSubmenuReportes.Controls.Add(this.button1);
             this.PanelSubmenuReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSubmenuReportes.Location = new System.Drawing.Point(0, 351);
+            this.PanelSubmenuReportes.Location = new System.Drawing.Point(0, 345);
             this.PanelSubmenuReportes.Name = "PanelSubmenuReportes";
             this.PanelSubmenuReportes.Size = new System.Drawing.Size(169, 103);
             this.PanelSubmenuReportes.TabIndex = 5;
@@ -179,54 +179,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Logo
-            // 
-            this.Logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
-            this.Logo.Controls.Add(this.pictureBox3);
-            this.Logo.Controls.Add(this.lblTipo);
-            this.Logo.Controls.Add(this.lbluser);
-            this.Logo.Controls.Add(this.lblUsuario);
-            this.Logo.Controls.Add(this.botonInicio);
-            this.Logo.Controls.Add(this.pictureBox1);
-            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo.Location = new System.Drawing.Point(0, 0);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(169, 151);
-            this.Logo.TabIndex = 0;
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(33)))));
-            this.lblTipo.Location = new System.Drawing.Point(37, 102);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(57, 21);
-            this.lblTipo.TabIndex = 5;
-            this.lblTipo.Text = "label1";
-            // 
-            // lbluser
-            // 
-            this.lbluser.AutoSize = true;
-            this.lbluser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluser.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbluser.Location = new System.Drawing.Point(37, 73);
-            this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(57, 21);
-            this.lbluser.TabIndex = 4;
-            this.lbluser.Text = "label1";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblUsuario.Location = new System.Drawing.Point(28, 76);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(0, 21);
-            this.lblUsuario.TabIndex = 4;
             // 
             // panel2
             // 
@@ -382,7 +334,7 @@
             this.btnSeguridad.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSeguridad.Image = global::Win.Supermercado.Properties.Resources.empleados1;
             this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 454);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 448);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Size = new System.Drawing.Size(169, 50);
             this.btnSeguridad.TabIndex = 6;
@@ -401,7 +353,7 @@
             this.btnReportes.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnReportes.Image = global::Win.Supermercado.Properties.Resources.reportes1;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 301);
+            this.btnReportes.Location = new System.Drawing.Point(0, 295);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(169, 50);
             this.btnReportes.TabIndex = 4;
@@ -420,7 +372,7 @@
             this.btnFacturas.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnFacturas.Image = global::Win.Supermercado.Properties.Resources.pagos;
             this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacturas.Location = new System.Drawing.Point(0, 251);
+            this.btnFacturas.Location = new System.Drawing.Point(0, 245);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.Size = new System.Drawing.Size(169, 50);
             this.btnFacturas.TabIndex = 3;
@@ -439,7 +391,7 @@
             this.btnClientes.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnClientes.Image = global::Win.Supermercado.Properties.Resources.clientes1;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 201);
+            this.btnClientes.Location = new System.Drawing.Point(0, 195);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(169, 50);
             this.btnClientes.TabIndex = 2;
@@ -458,7 +410,7 @@
             this.btnProducto.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnProducto.Image = global::Win.Supermercado.Properties.Resources.producto1;
             this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducto.Location = new System.Drawing.Point(0, 151);
+            this.btnProducto.Location = new System.Drawing.Point(0, 145);
             this.btnProducto.Name = "btnProducto";
             this.btnProducto.Size = new System.Drawing.Size(169, 50);
             this.btnProducto.TabIndex = 1;
@@ -468,15 +420,15 @@
             this.btnProducto.UseVisualStyleBackColor = true;
             this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
-            // pictureBox3
+            // pictureBox1
             // 
-            this.pictureBox3.Image = global::Win.Supermercado.Properties.Resources._1487716857_user_81635;
-            this.pictureBox3.Location = new System.Drawing.Point(10, 100);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.user_icon_icons_com_66546;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // botonInicio
             // 
@@ -489,15 +441,63 @@
             this.botonInicio.TabStop = false;
             this.botonInicio.Click += new System.EventHandler(this.botonInicio_Click);
             // 
-            // pictureBox1
+            // lblUsuario
             // 
-            this.pictureBox1.Image = global::Win.Supermercado.Properties.Resources.user_icon_icons_com_66546;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 71);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblUsuario.Location = new System.Drawing.Point(28, 73);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 21);
+            this.lblUsuario.TabIndex = 4;
+            // 
+            // lbluser
+            // 
+            this.lbluser.AutoSize = true;
+            this.lbluser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluser.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbluser.Location = new System.Drawing.Point(37, 73);
+            this.lbluser.Name = "lbluser";
+            this.lbluser.Size = new System.Drawing.Size(57, 21);
+            this.lbluser.TabIndex = 4;
+            this.lbluser.Text = "label1";
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(219)))), ((int)(((byte)(33)))));
+            this.lblTipo.Location = new System.Drawing.Point(37, 102);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(57, 21);
+            this.lblTipo.TabIndex = 5;
+            this.lblTipo.Text = "label1";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Win.Supermercado.Properties.Resources._1487716857_user_81635;
+            this.pictureBox3.Location = new System.Drawing.Point(10, 100);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Logo
+            // 
+            this.Logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(60)))));
+            this.Logo.Controls.Add(this.pictureBox3);
+            this.Logo.Controls.Add(this.lblTipo);
+            this.Logo.Controls.Add(this.lbluser);
+            this.Logo.Controls.Add(this.lblUsuario);
+            this.Logo.Controls.Add(this.botonInicio);
+            this.Logo.Controls.Add(this.pictureBox1);
+            this.Logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo.Location = new System.Drawing.Point(0, 0);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(169, 145);
+            this.Logo.TabIndex = 0;
             // 
             // FrrmMenu
             // 
@@ -516,8 +516,6 @@
             this.Botones.ResumeLayout(false);
             this.PanelSubMenuSeguridad.ResumeLayout(false);
             this.PanelSubmenuReportes.ResumeLayout(false);
-            this.Logo.ResumeLayout(false);
-            this.Logo.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelVentanaBTN.ResumeLayout(false);
@@ -525,9 +523,11 @@
             this.PanelEscritorio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconodeFormHijo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.botonInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Logo.ResumeLayout(false);
+            this.Logo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -535,7 +535,6 @@
         #endregion
 
         private System.Windows.Forms.Panel Botones;
-        private System.Windows.Forms.Panel Logo;
         private System.Windows.Forms.Button btnReportes;
         private System.Windows.Forms.Button btnFacturas;
         private System.Windows.Forms.Button btnClientes;
@@ -550,7 +549,6 @@
         private System.Windows.Forms.Panel PanelSubMenuSeguridad;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox botonInicio;
         private System.Windows.Forms.Timer horafecha;
         private System.Windows.Forms.Panel panelVentanaBTN;
         private System.Windows.Forms.Button buttonSalir;
@@ -560,11 +558,13 @@
         private System.Windows.Forms.Panel PanelEscritorio;
         private System.Windows.Forms.Label lblfecha;
         private System.Windows.Forms.Label lblhora;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Label lbluser;
-        private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ToolTip ttmensaje;
+        private System.Windows.Forms.Panel Logo;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lbluser;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.PictureBox botonInicio;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

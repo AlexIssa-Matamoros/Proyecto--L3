@@ -36,10 +36,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
+            this.iconError = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconError)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -152,6 +155,29 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "CONTRASEÑA";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.DimGray;
+            this.lblError.Location = new System.Drawing.Point(288, 157);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(31, 16);
+            this.lblError.TabIndex = 13;
+            this.lblError.Text = "error";
+            this.lblError.Visible = false;
+            // 
+            // iconError
+            // 
+            this.iconError.Image = global::Win.Supermercado.Properties.Resources.error1;
+            this.iconError.Location = new System.Drawing.Point(264, 154);
+            this.iconError.Name = "iconError";
+            this.iconError.Size = new System.Drawing.Size(20, 20);
+            this.iconError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconError.TabIndex = 14;
+            this.iconError.TabStop = false;
+            this.iconError.Visible = false;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Win.Supermercado.Properties.Resources.padlock;
@@ -190,6 +216,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(582, 239);
             this.ControlBox = false;
+            this.Controls.Add(this.iconError);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -210,6 +238,7 @@
             this.Text = "Ingreso al sistema";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconError)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -230,6 +259,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.PictureBox iconError;
     }
 }
 

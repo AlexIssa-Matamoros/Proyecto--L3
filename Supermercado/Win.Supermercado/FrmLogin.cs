@@ -46,7 +46,9 @@ namespace Win.Supermercado
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecta");
+                MsjError("Ingrese un usuario y contraseña valido");
+                txtContra.Clear();
+                txtUsuario.Focus();
             }
 
             button1.Enabled = true;
@@ -123,6 +125,13 @@ namespace Win.Supermercado
                 txtContra.ForeColor = System.Drawing.Color.DimGray;
                 txtContra.UseSystemPasswordChar = false;
             }
+        }
+
+        private void MsjError(string msg)
+        {
+            lblError.Text = msg;
+            lblError.Visible = true;
+            iconError.Visible = true;
         }
     }
 }

@@ -61,7 +61,7 @@
             this.pictureBox2.Image = global::Win.Supermercado.Properties.Resources.Logo__Opcion_2_blanco_PNG_;
             this.pictureBox2.Location = new System.Drawing.Point(12, 9);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(118, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(150, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
