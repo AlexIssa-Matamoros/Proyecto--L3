@@ -273,6 +273,16 @@ namespace Win.Supermercado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icono {
+            get {
+                object obj = ResourceManager.GetObject("Icono", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icono_cerrar_FN {
             get {
                 object obj = ResourceManager.GetObject("Icono cerrar FN", resourceCulture);
@@ -326,6 +336,26 @@ namespace Win.Supermercado.Properties {
         internal static System.Drawing.Bitmap Logo__Opcion_2_blanco_PNG_ {
             get {
                 object obj = ResourceManager.GetObject("Logo, Opcion 2 blanco(PNG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MK_System_Logo {
+            get {
+                object obj = ResourceManager.GetObject("MK System Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MK_System_Logo1 {
+            get {
+                object obj = ResourceManager.GetObject("MK System Logo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -446,6 +476,16 @@ namespace Win.Supermercado.Properties {
         internal static System.Drawing.Bitmap venta2 {
             get {
                 object obj = ResourceManager.GetObject("venta2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_08_08_at_3_08_57_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-08-08 at 3.08.57 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

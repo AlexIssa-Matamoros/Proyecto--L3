@@ -215,5 +215,21 @@ namespace Win.Supermercado
 
             DeshabilitarHabilitarBotones(false);
         }
+
+        private void listaFacturasBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+            this.BackColor = Color.AliceBlue;
+        }
+
+        private void listaFacturasBindingNavigator_RefreshItems_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private struct RGBColores
+        {
+            public static Color color1 = Color.FromArgb(1, 50, 83);
+            
+        }
     }
 }
