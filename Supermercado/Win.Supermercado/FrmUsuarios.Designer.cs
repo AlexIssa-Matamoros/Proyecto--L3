@@ -319,7 +319,7 @@
             this.listaUsuariosDataGridView.Location = new System.Drawing.Point(356, 140);
             this.listaUsuariosDataGridView.Name = "listaUsuariosDataGridView";
             this.listaUsuariosDataGridView.ReadOnly = true;
-            this.listaUsuariosDataGridView.Size = new System.Drawing.Size(388, 327);
+            this.listaUsuariosDataGridView.Size = new System.Drawing.Size(444, 327);
             this.listaUsuariosDataGridView.TabIndex = 9;
             this.listaUsuariosDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.listaUsuariosDataGridView_CellFormatting);
             // 
