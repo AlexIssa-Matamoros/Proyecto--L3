@@ -36,6 +36,7 @@ namespace Win.Supermercado
             this.ttmensaje.SetToolTip(this.button6, "Minimizar");
             this.ttmensaje.SetToolTip(this.button5, "Maximizar");
             this.ttmensaje.SetToolTip(this.buttonSalir, "Salir");
+            this.ttmensaje.SetToolTip(this.botonInicio, "Inicio");
         }
 
         //

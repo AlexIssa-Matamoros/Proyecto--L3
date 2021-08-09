@@ -35,6 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnSeguridad = new System.Windows.Forms.Button();
             this.PanelSubmenuReportes = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.lblhora = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.button7 = new System.Windows.Forms.Button();
             this.Botones.SuspendLayout();
             this.PanelSubMenuSeguridad.SuspendLayout();
             this.PanelSubmenuReportes.SuspendLayout();
@@ -171,6 +171,22 @@
             this.PanelSubmenuReportes.Name = "PanelSubmenuReportes";
             this.PanelSubmenuReportes.Size = new System.Drawing.Size(169, 154);
             this.PanelSubmenuReportes.TabIndex = 5;
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.button7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button7.Location = new System.Drawing.Point(0, 100);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(169, 50);
+            this.button7.TabIndex = 2;
+            this.button7.Text = "Reporte de Clientes";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button2
             // 
@@ -528,22 +544,6 @@
             // ttmensaje
             // 
             this.ttmensaje.IsBalloon = true;
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.button7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button7.Location = new System.Drawing.Point(0, 100);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(169, 50);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Reporte de Clientes";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // FrrmMenu
             // 
