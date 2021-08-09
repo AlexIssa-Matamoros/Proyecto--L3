@@ -292,7 +292,8 @@ namespace Win.Supermercado
         {
             
         }
-
+          
+        /// AUTORIZAR USUARIOS
         private void DatosUsuario()
         {
             if (Program.UsuarioLogueado != null)
